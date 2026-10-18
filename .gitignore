@@ -1,0 +1,21 @@
+build/
+.build/
+target/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcuserstate
+*.mobileprovision
+*.p12
+*.p8
+*.pem
+*.key
+*.ipa
+*.app/
+*.dSYM/
+.env*
+logs/
+*.log
+pairing.plist
+*.pairing
+# Local-only prerequisite, never committed (see runner/PRIVATE_HEADERS_PREREQUISITE.md)
+runner/PrivateHeaders/

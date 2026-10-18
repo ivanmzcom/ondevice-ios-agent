@@ -1,0 +1,101 @@
+# xcodegen spec: unified on-device agent spike. Separate from the main app and
+# from ../real/OnDeviceRunner (the working heartbeat prototype); shares no
+# bundle ids or targets with either.
+name: UnifiedAgent
+options:
+  bundleIdPrefix: dev.spike.unifiedagent
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    UNI_LIB_DIR: $(SRCROOT)/build/rust/aarch64-apple-ios/release
+    "UNI_LIB_DIR[sdk=iphonesimulator*]": $(SRCROOT)/build/rust/aarch64-apple-ios-sim/release
+    SWIFT_VERSION: "6.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    SUPPORTED_PLATFORMS: "iphoneos iphonesimulator"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+packages:
+  # Agent core: WDA observation/tap/typing steps + upstream LLM client (Core/VENDORED.md) + task agent.
+  UnifiedAgentCore:
+    path: Core
+targets:
+  UnifiedAgent:
+    type: application
+    platform: iOS
+    sources:
+      - App
+      # Live Activity attributes + Stop intent, compiled into both the app and UnifiedActivity.
+      - LiveActivity/Shared
+    dependencies:
+      - target: UnifiedTunnel   # embedded as PlugIns/UnifiedTunnel.appex
+      - target: UnifiedActivity # embedded as PlugIns/UnifiedActivity.appex
+      - package: UnifiedAgentCore
+    entitlements:
+      path: App/UnifiedAgent.entitlements
+      properties:
+        com.apple.developer.networking.networkextension: [packet-tunnel-provider]
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Unified Agent (spike)
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSLocalNetworkUsageDescription: Connects to this iPhone's own developer services through its in-app loopback tunnel.
+        LSSupportsOpeningDocumentsInPlace: false
+        # Run progress on the Lock Screen / Dynamic Island, started only when the user starts a task.
+        NSSupportsLiveActivities: true
+        # EXPERIMENTAL opt-in: task-scoped silent playback (mixes with others, no microphone); see BACKGROUND_AUDIO_REPORT.md.
+        UIBackgroundModes: [audio]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.spike.unifiedagent.app
+        SWIFT_OBJC_BRIDGING_HEADER: App/BridgingHeader.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/unified-ffi/include
+        LIBRARY_SEARCH_PATHS: $(UNI_LIB_DIR)
+        OTHER_LDFLAGS: [-lunified_ffi, -liconv]
+  UnifiedTunnel:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Tunnel
+    entitlements:
+      path: Tunnel/UnifiedTunnel.entitlements
+      properties:
+        com.apple.developer.networking.networkextension: [packet-tunnel-provider]
+    info:
+      path: Tunnel/Info.plist
+      properties:
+        CFBundleDisplayName: UnifiedTunnel
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.networkextension.packet-tunnel
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).PacketTunnelProvider
+    settings:
+      base:
+        # Must be prefixed by the host's id; TunnelController derives it the same way.
+        PRODUCT_BUNDLE_IDENTIFIER: dev.spike.unifiedagent.app.tunnel
+  UnifiedActivity:
+    # WidgetKit extension with the run's Live Activity (port of upstream ios/AgentActivity). No entitlements:
+    # no app group, the state arrives through ActivityKit only.
+    type: app-extension
+    platform: iOS
+    sources:
+      - LiveActivity/Widget
+      - LiveActivity/Shared
+    info:
+      path: LiveActivity/Widget/Info.plist
+      properties:
+        CFBundleDisplayName: Unified Agent Activity
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        # Must be prefixed by the host's id.
+        PRODUCT_BUNDLE_IDENTIFIER: dev.spike.unifiedagent.app.activity
+        # Swift 5 mode like upstream, so the copied AgentFace compiles unchanged.
+        SWIFT_VERSION: "5.0"
+        SKIP_INSTALL: YES
+schemes:
+  UnifiedAgent:
+    build:
+      targets:
+        UnifiedAgent: all

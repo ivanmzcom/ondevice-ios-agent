@@ -1,0 +1,3972 @@
+Embedded copyright/license notices extracted verbatim from aws-lc-sys-0.46.0 source files
+
+Extraction: leading comment block of every C/C++/assembly/header file in the published crate; comment
+markers removed and only paragraphs containing legal language kept, words otherwise verbatim
+(crates.io archive verified against Cargo.lock checksum). 255 unique blocks.
+Each block lists the files carrying it. "[selection]" = file named by the default aws-lc-sys cc_builder
+lists for apple/aarch64 or reached by their #include closure (static analysis, no build was run;
+this is not a claim of binary inclusion). "[superset]" = shipped in the crate but outside that selection.
+These texts supplement, and do not replace, the full license files in licenses/cargo/aws-lc-sys-0.46.0/.
+
+==============================================================================
+Notice block 1: 64 selection file(s), 568 superset-only file(s)
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_madd_n25519.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_madd_n25519_alt.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_mod_n25519.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_neg_p25519.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519_byte_alt.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519base_byte.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519base_byte_alt.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_decode.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_decode_alt.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_encode.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmulbase.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/edwards25519_scalarmulbase_alt.S
+  [selection] ... and 52 more
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_add_p25519.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_cmul_p25519.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_double_p25519.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_inv_p25519.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_invsqrt_p25519.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/bignum_invsqrt_p25519_alt.S
+  [superset]  ... and 562 more
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT-0
+
+==============================================================================
+Notice block 2: 163 selection file(s), 5 superset-only file(s)
+  [selection] aws-lc/crypto/asn1/a_bitstr.c
+  [selection] aws-lc/crypto/asn1/a_bool.c
+  [selection] aws-lc/crypto/asn1/a_d2i_fp.c
+  [selection] aws-lc/crypto/asn1/a_dup.c
+  [selection] aws-lc/crypto/asn1/a_gentm.c
+  [selection] aws-lc/crypto/asn1/a_i2d_fp.c
+  [selection] aws-lc/crypto/asn1/a_int.c
+  [selection] aws-lc/crypto/asn1/a_mbstr.c
+  [selection] aws-lc/crypto/asn1/a_object.c
+  [selection] aws-lc/crypto/asn1/a_octet.c
+  [selection] aws-lc/crypto/asn1/a_strex.c
+  [selection] aws-lc/crypto/asn1/a_strnid.c
+  [selection] ... and 151 more
+  [superset]  aws-lc/crypto/dh_extra/dh_test.cc
+  [superset]  aws-lc/crypto/hmac_extra/hmac_test.cc
+  [superset]  aws-lc/crypto/rsa_extra/rsa_test.cc
+  [superset]  aws-lc/ssl/ssl_privkey.cc
+  [superset]  aws-lc/ssl/tls_method.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 3: 34 selection file(s), 67 superset-only file(s)
+  [selection] aws-lc/crypto/bio/bio_addr.c
+  [selection] aws-lc/crypto/bio/dgram.c
+  [selection] aws-lc/crypto/bio/md.c
+  [selection] aws-lc/crypto/console/console.c
+  [selection] aws-lc/crypto/console/internal.h
+  [selection] aws-lc/crypto/evp_extra/internal.h
+  [selection] aws-lc/crypto/evp_extra/p_dsa.c
+  [selection] aws-lc/crypto/evp_extra/p_methods.c
+  [selection] aws-lc/crypto/evp_extra/p_pqdsa_asn1.c
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_aarch64.c
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_aarch64.h
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_aarch64_netbsd.c
+  [selection] ... and 22 more
+  [superset]  aws-lc/crypto/bio/bio_md_test.cc
+  [superset]  aws-lc/crypto/bio/bio_socket_test.cc
+  [superset]  aws-lc/crypto/cipher_extra/cts_test.cc
+  [superset]  aws-lc/crypto/console/console_test.cc
+  [superset]  aws-lc/crypto/des/des_test.cc
+  [superset]  aws-lc/crypto/endian_test.cc
+  [superset]  ... and 61 more
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+
+==============================================================================
+Notice block 4: 23 selection file(s), 22 superset-only file(s)
+  [selection] aws-lc/crypto/bio/socket_helper.c
+  [selection] aws-lc/crypto/bytestring/ber.c
+  [selection] aws-lc/crypto/bytestring/cbb.c
+  [selection] aws-lc/crypto/bytestring/cbs.c
+  [selection] aws-lc/crypto/bytestring/internal.h
+  [selection] aws-lc/crypto/cipher_extra/e_chacha20poly1305.c
+  [selection] aws-lc/crypto/cipher_extra/e_tls.c
+  [selection] aws-lc/crypto/crypto.c
+  [selection] aws-lc/crypto/engine/engine.c
+  [selection] aws-lc/crypto/fipsmodule/cipher/aead.c
+  [selection] aws-lc/crypto/fipsmodule/hkdf/hkdf.c
+  [selection] aws-lc/crypto/pkcs7/pkcs7.c
+  [selection] ... and 11 more
+  [superset]  aws-lc/crypto/base64/base64_test.cc
+  [superset]  aws-lc/crypto/bio/bio_test.cc
+  [superset]  aws-lc/crypto/bytestring/bytestring_test.cc
+  [superset]  aws-lc/crypto/cipher_extra/aead_test.cc
+  [superset]  aws-lc/crypto/digest_extra/digest_test.cc
+  [superset]  aws-lc/crypto/err/err_test.cc
+  [superset]  ... and 16 more
+------------------------------------------------------------------------------
+Copyright (c) 2014, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 5: 36 selection file(s), 8 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/cbmc.h
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/common.h
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/compress.c
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/compress.h
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/context.h
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/debug.c
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/debug.h
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/indcpa.c
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/indcpa.h
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/kem.c
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/kem.h
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/mlkem_native.h
+  [selection] ... and 24 more
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/meta.h
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/meta.h
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_poly_mulcache_compute_avx2_asm.S
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k2_avx2_asm.S
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k3_avx2_asm.S
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k4_avx2_asm.S
+  [superset]  ... and 2 more
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+==============================================================================
+Notice block 6: 13 selection file(s), 24 superset-only file(s)
+  [selection] aws-lc/crypto/bytestring/unicode.c
+  [selection] aws-lc/crypto/chacha/internal.h
+  [selection] aws-lc/crypto/fipsmodule/bn/div_extra.c
+  [selection] aws-lc/crypto/fipsmodule/bn/gcd_extra.c
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_arm_linux.h
+  [selection] aws-lc/crypto/fipsmodule/ec/felem.c
+  [selection] aws-lc/crypto/fipsmodule/ec/scalar.c
+  [selection] aws-lc/crypto/fipsmodule/ec/simple_mul.c
+  [selection] aws-lc/crypto/fipsmodule/md5/internal.h
+  [selection] aws-lc/crypto/fipsmodule/sha/internal.h
+  [selection] aws-lc/crypto/hrss/hrss.c
+  [selection] aws-lc/crypto/hrss/internal.h
+  [selection] ... and 1 more
+  [superset]  aws-lc/crypto/abi_self_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/cpucap/cpu_arm_linux_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/md5/md5_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/sha/sha_test.cc
+  [superset]  aws-lc/crypto/hrss/hrss_test.cc
+  [superset]  aws-lc/crypto/impl_dispatch_test.cc
+  [superset]  ... and 18 more
+------------------------------------------------------------------------------
+Copyright (c) 2018, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 7: 22 selection file(s), 8 superset-only file(s)
+  [selection] aws-lc/crypto/evp_extra/p_kem_asn1.c
+  [selection] aws-lc/crypto/fipsmodule/cpucap/internal.h
+  [selection] aws-lc/crypto/fipsmodule/ec/ec_nistp.h
+  [selection] aws-lc/crypto/fipsmodule/ec/p384.c
+  [selection] aws-lc/crypto/fipsmodule/evp/p_kem.c
+  [selection] aws-lc/crypto/fipsmodule/kem/internal.h
+  [selection] aws-lc/crypto/fipsmodule/kem/kem.c
+  [selection] aws-lc/crypto/fipsmodule/pqdsa/internal.h
+  [selection] aws-lc/crypto/fipsmodule/pqdsa/pqdsa.c
+  [selection] aws-lc/crypto/fipsmodule/rand/entropy/entropy_sources.c
+  [selection] aws-lc/crypto/fipsmodule/rand/entropy/internal.h
+  [selection] aws-lc/crypto/fipsmodule/rand/entropy/tree_drbg_jitter_entropy.c
+  [selection] ... and 10 more
+  [superset]  aws-lc/crypto/fipsmodule/rand/entropy/entropy_source_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/rand/entropy/tree_drbg_jitter_entropy_isolated_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/rand/rand_isolated_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/rand/rand_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/sha/sha3_test.cc
+  [superset]  aws-lc/crypto/rand_extra/vm_ube_fallback_test.cc
+  [superset]  ... and 2 more
+------------------------------------------------------------------------------
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+
+==============================================================================
+Notice block 8: 14 selection file(s), 14 superset-only file(s)
+  [selection] aws-lc/crypto/bytestring/asn1_compat.c
+  [selection] aws-lc/crypto/decrepit/evp/evp_do_all.c
+  [selection] aws-lc/crypto/decrepit/obj/obj_decrepit.c
+  [selection] aws-lc/crypto/decrepit/x509/x509_decrepit.c
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_aarch64_linux.c
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_arm_linux.c
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_ppc64le.c
+  [selection] aws-lc/crypto/fipsmodule/modes/polyval.c
+  [selection] aws-lc/crypto/poly1305/internal.h
+  [selection] aws-lc/crypto/pool/internal.h
+  [selection] aws-lc/crypto/pool/pool.c
+  [selection] aws-lc/crypto/rand_extra/deterministic.c
+  [selection] ... and 2 more
+  [superset]  aws-lc/crypto/asn1/asn1_test.cc
+  [superset]  aws-lc/crypto/chacha/chacha_test.cc
+  [superset]  aws-lc/crypto/decrepit/ripemd/ripemd_test.cc
+  [superset]  aws-lc/crypto/ecdh_extra/ecdh_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/ec/p256-nistz_test.cc
+  [superset]  aws-lc/crypto/obj/obj_test.cc
+  [superset]  ... and 8 more
+------------------------------------------------------------------------------
+Copyright (c) 2016, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 9: 16 selection file(s), 11 superset-only file(s)
+  [selection] aws-lc/crypto/cipher_extra/e_aesctrhmac.c
+  [selection] aws-lc/crypto/cipher_extra/e_aesgcmsiv.c
+  [selection] aws-lc/crypto/decrepit/cfb/cfb.c
+  [selection] aws-lc/crypto/err/internal.h
+  [selection] aws-lc/crypto/evp_extra/p_ed25519_asn1.c
+  [selection] aws-lc/crypto/fipsmodule/aes/internal.h
+  [selection] aws-lc/crypto/fipsmodule/bcm.c
+  [selection] aws-lc/crypto/fipsmodule/delocate.h
+  [selection] aws-lc/crypto/fipsmodule/evp/p_ed25519.c
+  [selection] aws-lc/crypto/fipsmodule/evp/p_ed25519ph.c
+  [selection] aws-lc/crypto/fipsmodule/rand/ctrdrbg.c
+  [selection] aws-lc/crypto/fipsmodule/self_check/self_check.c
+  [selection] ... and 4 more
+  [superset]  aws-lc/crypto/buf/buf_test.cc
+  [superset]  aws-lc/crypto/compiler_test.cc
+  [superset]  aws-lc/crypto/decrepit/cfb/cfb_test.cc
+  [superset]  aws-lc/crypto/evp_extra/scrypt_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/rand/ctrdrbg_test.cc
+  [superset]  aws-lc/crypto/test/file_test_gtest.cc
+  [superset]  ... and 5 more
+------------------------------------------------------------------------------
+Copyright (c) 2017, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 10: 27 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/cbmc.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/context.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/mldsa_native.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/mldsa_native_bcm.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/aarch64_zetas.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/polyz_unpack_table.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/rej_uniform_eta_table.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/rej_uniform_table.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/consts.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/consts.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/rej_uniform_table.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/packing.c
+  [selection] ... and 15 more
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+==============================================================================
+Notice block 11: 9 selection file(s), 16 superset-only file(s)
+  [selection] aws-lc/crypto/bn_extra/bn_asn1.c
+  [selection] aws-lc/crypto/conf/internal.h
+  [selection] aws-lc/crypto/fipsmodule/ec/util.c
+  [selection] aws-lc/crypto/fipsmodule/rand/internal.h
+  [selection] aws-lc/crypto/refcount_c11.c
+  [selection] aws-lc/crypto/refcount_lock.c
+  [selection] aws-lc/crypto/thread_none.c
+  [selection] aws-lc/include/openssl/cmac.h
+  [selection] aws-lc/include/openssl/curve25519.h
+  [superset]  aws-lc/crypto/fipsmodule/aes/aes_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/cmac/cmac_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/curve25519/ed25519_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/curve25519/x25519_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/pbkdf/pbkdf_test.cc
+  [superset]  aws-lc/crypto/pkcs8/pkcs8_test.cc
+  [superset]  ... and 10 more
+------------------------------------------------------------------------------
+Copyright (c) 2015, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 12: 12 selection file(s), 6 superset-only file(s)
+  [selection] aws-lc/crypto/dsa/internal.h
+  [selection] aws-lc/crypto/ec_extra/hash_to_curve.c
+  [selection] aws-lc/crypto/ec_extra/internal.h
+  [selection] aws-lc/crypto/fipsmodule/curve25519/internal.h
+  [selection] aws-lc/crypto/hpke/hpke.c
+  [selection] aws-lc/crypto/rand_extra/getrandom_fillin.h
+  [selection] aws-lc/crypto/trust_token/pmbtoken.c
+  [selection] aws-lc/crypto/trust_token/voprf.c
+  [selection] aws-lc/crypto/ube/fork_ube_detect.c
+  [selection] aws-lc/crypto/ube/fork_ube_detect.h
+  [selection] aws-lc/include/openssl/hpke.h
+  [selection] aws-lc/include/openssl/trust_token.h
+  [superset]  aws-lc/crypto/crypto_test.cc
+  [superset]  aws-lc/crypto/fipsmodule/modes/xts_test.cc
+  [superset]  aws-lc/crypto/hpke/hpke_test.cc
+  [superset]  aws-lc/crypto/rand_extra/ccrandomgeneratebytes_test.cc
+  [superset]  aws-lc/crypto/trust_token/trust_token_test.cc
+  [superset]  aws-lc/crypto/ube/fork_ube_detect_test.cc
+------------------------------------------------------------------------------
+Copyright (c) 2020, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 13: 17 selection file(s), 1 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/pbkdf/pbkdf.c
+  [selection] aws-lc/crypto/pkcs8/internal.h
+  [selection] aws-lc/crypto/pkcs8/pkcs8.c
+  [selection] aws-lc/crypto/pkcs8/pkcs8_x509.c
+  [selection] aws-lc/crypto/x509/v3_akey.c
+  [selection] aws-lc/crypto/x509/v3_akeya.c
+  [selection] aws-lc/crypto/x509/v3_bcons.c
+  [selection] aws-lc/crypto/x509/v3_bitst.c
+  [selection] aws-lc/crypto/x509/v3_enum.c
+  [selection] aws-lc/crypto/x509/v3_extku.c
+  [selection] aws-lc/crypto/x509/v3_ia5.c
+  [selection] aws-lc/crypto/x509/v3_info.c
+  [selection] ... and 5 more
+  [superset]  aws-lc/crypto/x509/tab_test.cc
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 1999.
+Copyright (c) 1999 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 14: 9 selection file(s), 6 superset-only file(s)
+  [selection] aws-lc/crypto/ec_extra/ec_derive.c
+  [selection] aws-lc/crypto/evp_extra/p_x25519.c
+  [selection] aws-lc/crypto/evp_extra/p_x25519_asn1.c
+  [selection] aws-lc/crypto/fipsmodule/aes/aes_nohw.c
+  [selection] aws-lc/crypto/fipsmodule/modes/gcm_nohw.c
+  [selection] aws-lc/crypto/siphash/siphash.c
+  [selection] aws-lc/crypto/trust_token/internal.h
+  [selection] aws-lc/crypto/trust_token/trust_token.c
+  [selection] aws-lc/include/openssl/siphash.h
+  [superset]  aws-lc/crypto/decrepit/blowfish/blowfish_test.cc
+  [superset]  aws-lc/crypto/decrepit/cast/cast_test.cc
+  [superset]  aws-lc/crypto/rand_extra/urandom_test.cc
+  [superset]  aws-lc/crypto/siphash/siphash_test.cc
+  [superset]  aws-lc/ssl/test/mock_quic_transport.cc
+  [superset]  aws-lc/ssl/test/mock_quic_transport.h
+------------------------------------------------------------------------------
+Copyright (c) 2019, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 15: 8 selection file(s), 2 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/ct.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/ct.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/debug.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/debug.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/arith_native_aarch64.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/api.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/arith_native_x86_64.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/sys.h
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/meta.h
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/meta.h
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+==============================================================================
+Notice block 16: 9 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-base.h
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-gcd.h
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-health.h
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-noise.c
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-noise.h
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-sha3.c
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-sha3.h
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-timer.c
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-timer.h
+------------------------------------------------------------------------------
+Copyright (C) 2021 - 2025, Stephan Mueller <smueller@chronox.de>
+
+License: see LICENSE file in root directory
+
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+==============================================================================
+Notice block 17: 4 selection file(s), 4 superset-only file(s)
+  [selection] aws-lc/crypto/blake2/blake2.c
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_aarch64_apple.c
+  [selection] aws-lc/crypto/fipsmodule/ecdsa/internal.h
+  [selection] aws-lc/include/openssl/blake2.h
+  [superset]  aws-lc/crypto/blake2/blake2_test.cc
+  [superset]  aws-lc/crypto/conf/conf_test.cc
+  [superset]  aws-lc/crypto/decrepit/evp/evp_test.cc
+  [superset]  aws-lc/ssl/encrypted_client_hello.cc
+------------------------------------------------------------------------------
+Copyright (c) 2021, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 18: 7 selection file(s), 1 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/cipher/e_aesccm.c
+  [selection] aws-lc/crypto/fipsmodule/modes/cbc.c
+  [selection] aws-lc/crypto/fipsmodule/modes/cfb.c
+  [selection] aws-lc/crypto/fipsmodule/modes/ctr.c
+  [selection] aws-lc/crypto/fipsmodule/modes/gcm.c
+  [selection] aws-lc/crypto/fipsmodule/modes/internal.h
+  [selection] aws-lc/crypto/fipsmodule/modes/ofb.c
+  [superset]  aws-lc/crypto/fipsmodule/modes/gcm_test.cc
+------------------------------------------------------------------------------
+Copyright (c) 2008 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 19: 8 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_aarch64_freebsd.c
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_arm_freebsd.c
+  [selection] aws-lc/crypto/fipsmodule/dh/internal.h
+  [selection] aws-lc/crypto/fipsmodule/evp/p_hkdf.c
+  [selection] aws-lc/crypto/x509/policy.c
+  [selection] aws-lc/include/openssl/ctrdrbg.h
+  [selection] aws-lc/include/openssl/kdf.h
+  [selection] aws-lc/include/openssl/posix_time.h
+------------------------------------------------------------------------------
+Copyright (c) 2022, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 20: 5 selection file(s), 3 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_aarch64_sysreg.c
+  [selection] aws-lc/crypto/refcount_win.c
+  [selection] aws-lc/include/openssl/asm_base.h
+  [selection] aws-lc/include/openssl/target.h
+  [selection] aws-lc/include/openssl/x509v3.h
+  [superset]  aws-lc/crypto/rand_extra/getentropy_test.cc
+  [superset]  aws-lc/crypto/test/file_util.cc
+  [superset]  aws-lc/crypto/test/file_util.h
+------------------------------------------------------------------------------
+Copyright (c) 2023, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 21: 7 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/asn1/internal.h
+  [selection] aws-lc/crypto/evp_extra/p_dsa_asn1.c
+  [selection] aws-lc/crypto/evp_extra/p_ec_asn1.c
+  [selection] aws-lc/crypto/evp_extra/p_rsa_asn1.c
+  [selection] aws-lc/crypto/fipsmodule/evp/p_ec.c
+  [selection] aws-lc/crypto/fipsmodule/evp/p_rsa.c
+  [selection] aws-lc/crypto/x509/rsa_pss.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2006.
+Copyright (c) 2006 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 22: 5 selection file(s), 2 superset-only file(s)
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak2_f1600.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak4_f1600_alt.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak4_f1600_alt2.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600.S
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak_f1600_alt.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak2_f1600_alt.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/sha3/sha3_keccak4_f1600.S
+------------------------------------------------------------------------------
+Copyright (c) 2024 The mlkem-native project authors
+Copyright (c) 2021-2022 Arm Limited
+Copyright (c) 2022 Matthias Kannwischer
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+==============================================================================
+Notice block 23: 6 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ex_data.c
+  [selection] aws-lc/crypto/fipsmodule/bn/gcd.c
+  [selection] aws-lc/crypto/fipsmodule/bn/prime.c
+  [selection] aws-lc/crypto/fipsmodule/bn/random.c
+  [selection] aws-lc/crypto/internal.h
+  [selection] aws-lc/include/openssl/ex_data.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2001 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 24: 2 selection file(s), 4 superset-only file(s)
+  [selection] aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/sha256-armv8.S
+  [selection] aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/sha512-armv8.S
+  [superset]  aws-lc/generated-src/linux-aarch64/crypto/fipsmodule/sha256-armv8.S
+  [superset]  aws-lc/generated-src/linux-aarch64/crypto/fipsmodule/sha512-armv8.S
+  [superset]  aws-lc/generated-src/win-aarch64/crypto/fipsmodule/sha256-armv8.S
+  [superset]  aws-lc/generated-src/win-aarch64/crypto/fipsmodule/sha512-armv8.S
+------------------------------------------------------------------------------
+Copyright 2014-2020 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 25: 3 selection file(s), 3 superset-only file(s)
+  [selection] aws-lc/include/openssl/objects.h
+  [selection] aws-lc/include/openssl/opensslconf.h
+  [selection] aws-lc/include/openssl/safestack.h
+  [superset]  aws-lc/include/openssl/opensslv.h
+  [superset]  aws-lc/include/openssl/ossl_typ.h
+  [superset]  aws-lc/include/openssl/pkcs12.h
+------------------------------------------------------------------------------
+Copyright (c) 2014, Google Inc.
+SPDX-License-Identifier: ISC
+This header is provided in order to make compiling against code that expects
+OpenSSL easier.
+
+==============================================================================
+Notice block 26: 5 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/ec.c
+  [selection] aws-lc/crypto/fipsmodule/ec/internal.h
+  [selection] aws-lc/crypto/fipsmodule/ec/oct.c
+  [selection] aws-lc/include/openssl/ec.h
+  [selection] aws-lc/include/openssl/ec_key.h
+------------------------------------------------------------------------------
+Originally written by Bodo Moeller for the OpenSSL project.
+Copyright (c) 1998-2005 The OpenSSL Project.  All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 27: 3 selection file(s), 1 superset-only file(s)
+  [selection] aws-lc/crypto/ecdsa_extra/ecdsa_asn1.c
+  [selection] aws-lc/crypto/fipsmodule/ecdsa/ecdsa.c
+  [selection] aws-lc/include/openssl/ecdsa.h
+  [superset]  aws-lc/crypto/fipsmodule/ecdsa/ecdsa_test.cc
+------------------------------------------------------------------------------
+Copyright (c) 1998-2005 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 28: 1 selection file(s), 3 superset-only file(s)
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/jitterentropy-base-user.h
+  [superset]  aws-lc/third_party/jitterentropy/jitterentropy-library/arch/jitterentropy-base-power.h
+  [superset]  aws-lc/third_party/jitterentropy/jitterentropy-library/arch/jitterentropy-base-s390.h
+  [superset]  aws-lc/third_party/jitterentropy/jitterentropy-library/arch/jitterentropy-base-x86.h
+------------------------------------------------------------------------------
+Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2025
+
+License
+=======
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+notice, and the entire permission notice in its entirety,
+including the disclaimer of warranties.
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+3. The name of the author may not be used to endorse or promote
+products derived from this software without specific prior
+written permission.
+
+ALTERNATIVELY, this product may be distributed under the terms of
+the GNU General Public License, in which case the provisions of the GPL are
+required INSTEAD OF the above restrictions.  (This clause is
+necessary due to a potential bad interaction between the GPL and
+the restrictions contained in a BSD-style copyright.)
+
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+==============================================================================
+Notice block 29: 3 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/decrepit/cast/cast.c
+  [selection] aws-lc/crypto/pem/pem_info.c
+  [selection] aws-lc/include/openssl/asn1.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 30: 3 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/dh_extra/dh_asn1.c
+  [selection] aws-lc/crypto/rsa_extra/rsa_asn1.c
+  [selection] aws-lc/include/openssl/asn1t.h
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2000.
+Copyright (c) 2000-2005 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 31: 3 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ecdh_extra/ecdh_extra.c
+  [selection] aws-lc/crypto/fipsmodule/ecdh/ecdh.c
+  [selection] aws-lc/include/openssl/ecdh.h
+------------------------------------------------------------------------------
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+
+Copyright (c) 2000-2002 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 32: 3 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/aes/aes.c
+  [selection] aws-lc/crypto/fipsmodule/aes/mode_wrappers.c
+  [selection] aws-lc/include/openssl/aes.h
+------------------------------------------------------------------------------
+Copyright (c) 2002-2006 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 33: 3 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/ec_key.c
+  [selection] aws-lc/crypto/fipsmodule/ec/simple.c
+  [selection] aws-lc/crypto/fipsmodule/ec/wnaf.c
+------------------------------------------------------------------------------
+Originally written by Bodo Moeller for the OpenSSL project.
+Copyright (c) 1998-2005 The OpenSSL Project.  All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+
+The elliptic curve binary polynomial software is originally written by
+Sheueling Chang Shantz and Douglas Stebila of Sun Microsystems
+Laboratories.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 34: 3 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/common.h
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/poly.c
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/poly_kl.c
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+==============================================================================
+Notice block 35: 1 selection file(s), 2 superset-only file(s)
+  [selection] aws-lc/crypto/pem/pem_all.c
+  [superset]  aws-lc/ssl/s3_pkt.cc
+  [superset]  aws-lc/ssl/tls_record.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2002 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 36: 3 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/pem/pem_x509.c
+  [selection] aws-lc/crypto/pem/pem_xaux.c
+  [selection] aws-lc/crypto/x509/x509cset.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2001.
+Copyright (c) 2001 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 37: 3 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/v3_ncons.c
+  [selection] aws-lc/crypto/x509/v3_pcons.c
+  [selection] aws-lc/crypto/x509/v3_pmaps.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project.
+Copyright (c) 2003 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 38: 2 selection file(s), 1 superset-only file(s)
+  [selection] aws-lc/include/openssl/boringssl_prefix_symbols.h
+  [selection] aws-lc/include/openssl/boringssl_prefix_symbols_asm.h
+  [superset]  aws-lc/include/openssl/boringssl_prefix_symbols_nasm.inc
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+This file is intentionally empty, were AWS-LC installed with symbol prefixes, this file would contain
+macro definitions for the prefixed symbols.
+
+==============================================================================
+Notice block 39: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/cipher_extra/cts.c
+  [selection] aws-lc/include/openssl/modes.h
+------------------------------------------------------------------------------
+Copyright (c) 2008-2016 The OpenSSL Project. All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 40: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/dh_extra/params.c
+  [selection] aws-lc/crypto/fipsmodule/modes/xts.c
+------------------------------------------------------------------------------
+Copyright (c) 2011 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 41: 1 selection file(s), 1 superset-only file(s)
+  [selection] aws-lc/crypto/dsa/dsa.c
+  [superset]  aws-lc/crypto/dsa/dsa_test.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+The DSS routines are based on patches supplied by Steven Schoch <schoch@sheba.arc.nasa.gov>.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 42: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/evp_extra/p_hmac_asn1.c
+  [selection] aws-lc/crypto/fipsmodule/evp/p_hmac.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2007.
+Copyright (c) 2007 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 43: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/aes/key_wrap.c
+  [selection] aws-lc/crypto/fipsmodule/cipher/e_aes.c
+------------------------------------------------------------------------------
+Copyright (c) 2001-2011 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 44: 1 selection file(s), 1 superset-only file(s)
+  [selection] aws-lc/include/openssl/x509.h
+  [superset]  aws-lc/crypto/fipsmodule/bn/bn_test.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 45: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/internal.h
+  [selection] aws-lc/include/openssl/bn.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1997 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2006 The OpenSSL Project.  All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 46: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/montgomery.c
+  [selection] aws-lc/include/openssl/err.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2006 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 47: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/rsaz_exp.c
+  [selection] aws-lc/crypto/fipsmodule/bn/rsaz_exp.h
+------------------------------------------------------------------------------
+Copyright 2013-2016 The OpenSSL Project Authors. All Rights Reserved.
+Copyright (c) 2012, Intel Corporation. All Rights Reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 48: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/curve25519/curve25519.c
+  [selection] aws-lc/crypto/fipsmodule/curve25519/curve25519_nohw.c
+------------------------------------------------------------------------------
+Copyright (c) 2020, Google Inc.
+SPDX-License-Identifier: ISC
+Some of this code is taken from the ref10 version of Ed25519 in SUPERCOP
+20141124 (http://bench.cr.yp.to/supercop.html). That code is released as
+public domain. Other parts have been replaced to call into code generated by
+Fiat (https://github.com/mit-plv/fiat-crypto) in //third_party/fiat.
+
+==============================================================================
+Notice block 49: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/p256-nistz.c
+  [selection] aws-lc/crypto/fipsmodule/ec/p256-nistz.h
+------------------------------------------------------------------------------
+Copyright 2014-2016 The OpenSSL Project Authors. All Rights Reserved.
+Copyright (c) 2014, Intel Corporation. All Rights Reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 50: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/sshkdf/sshkdf.c
+  [selection] aws-lc/include/openssl/sshkdf.h
+------------------------------------------------------------------------------
+Copyright 2018-2022 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 51: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/obj/obj_dat.h
+  [selection] aws-lc/include/openssl/nid.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1997 Eric Young (eay@cryptsoft.com) All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+This file is generated by crypto/obj/objects.go.
+
+==============================================================================
+Notice block 52: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ocsp/internal.h
+  [selection] aws-lc/include/openssl/ocsp.h
+------------------------------------------------------------------------------
+Copyright 2015-2021 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 53: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ocsp/ocsp_http.c
+  [selection] aws-lc/crypto/ocsp/ocsp_server.c
+------------------------------------------------------------------------------
+Copyright 2001-2017 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+Modifications Copyright Amazon.com, Inc. or its affiliates.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+
+==============================================================================
+Notice block 54: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ocsp/ocsp_print.c
+  [selection] aws-lc/crypto/x509/v3_ocsp.c
+------------------------------------------------------------------------------
+Copyright 2000-2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 55: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/thread_pthread.c
+  [selection] aws-lc/crypto/thread_win.c
+------------------------------------------------------------------------------
+Copyright (c) 2015, Google Inc.
+SPDX-License-Identifier: ISC
+Ensure we can't call OPENSSL_malloc circularly.
+
+==============================================================================
+Notice block 56: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/v3_cpols.c
+  [selection] aws-lc/crypto/x509/v3_int.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 1999.
+Copyright (c) 1999-2004 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 57: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/v3_crld.c
+  [selection] aws-lc/crypto/x509/v3_genn.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 1999.
+Copyright (c) 1999-2008 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 58: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/v3_lib.c
+  [selection] aws-lc/crypto/x509/v3_prn.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 1999.
+Copyright (c) 1999 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+X509 v3 extension utilities
+
+==============================================================================
+Notice block 59: 1 selection file(s), 1 superset-only file(s)
+  [selection] aws-lc/include/openssl/buffer.h
+  [superset]  aws-lc/include/openssl/dtls1.h
+------------------------------------------------------------------------------
+Copyright (c) 2015, Google Inc.
+SPDX-License-Identifier: ISC
+This header is provided in order to make compiling against code that expects
+OpenSSL easier.
+
+==============================================================================
+Notice block 60: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/jitterentropy.h
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-internal.h
+------------------------------------------------------------------------------
+Copyright Stephan Mueller <smueller@chronox.de>, 2014 - 2025
+
+License
+=======
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+notice, and the entire permission notice in its entirety,
+including the disclaimer of warranties.
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+3. The name of the author may not be used to endorse or promote
+products derived from this software without specific prior
+written permission.
+
+ALTERNATIVELY, this product may be distributed under the terms of
+the GNU General Public License, in which case the provisions of the GPL are
+required INSTEAD OF the above restrictions.  (This clause is
+necessary due to a potential bad interaction between the GPL and
+the restrictions contained in a BSD-style copyright.)
+
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+==============================================================================
+Notice block 61: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-gcd.c
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-health.c
+------------------------------------------------------------------------------
+Copyright (C) 2021 - 2025, Joshua E. Hill <josh@keypair.us>
+Copyright (C) 2021 - 2025, Stephan Mueller <smueller@chronox.de>
+
+License: see LICENSE file in root directory
+
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+==============================================================================
+Notice block 62: 1 selection file(s), 1 superset-only file(s)
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519_byte.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/curve25519/curve25519_x25519.S
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT-0
+
+This code is substantially derived from Emil Lenngren's implementation
+
+==============================================================================
+Notice block 63: 2 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/aes/asm/aesv8-armx.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-armx.S)
+  [selection] aws-lc/crypto/fipsmodule/sha/asm/sha1-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/sha1-armv8.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright 2014-2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 64: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/asn1/posix_time.c
+------------------------------------------------------------------------------
+Copyright (c) 2022, Google Inc.
+SPDX-License-Identifier: ISC
+Time conversion to/from POSIX time_t and struct tm, with no support
+for time zones other than UTC
+
+==============================================================================
+Notice block 65: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/bio/pair.c
+------------------------------------------------------------------------------
+Copyright (c) 1998-2003 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 66: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/chacha/chacha.c
+------------------------------------------------------------------------------
+Copyright (c) 2014, Google Inc.
+SPDX-License-Identifier: ISC
+Adapted from the public domain, estream code by D. Bernstein.
+
+==============================================================================
+Notice block 67: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/cipher_extra/e_aes_cbc_hmac_sha1.c
+------------------------------------------------------------------------------
+Copyright 2011-2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 68: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/cipher_extra/e_aes_cbc_hmac_sha256.c
+------------------------------------------------------------------------------
+Copyright 2013-2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 69: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/cipher_extra/tls_cbc.c
+------------------------------------------------------------------------------
+Copyright (c) 2012 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 70: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/conf/conf_def.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+This file was historically generated by keysets.pl in OpenSSL.
+
+==============================================================================
+Notice block 71: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/decrepit/dh/dh_decrepit.c
+------------------------------------------------------------------------------
+Copyright (c) 1998-2002 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 72: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/dsa/dsa_asn1.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2000
+Copyright (c) 2000-2005 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 73: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ec_extra/ec_asn1.c
+------------------------------------------------------------------------------
+Written by Nils Larsch for the OpenSSL project.
+Copyright (c) 2000-2003 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 74: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ec_extra/ec_brainpool.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Brainpool elliptic curve groups from RFC 5639.
+These curves are not FIPS-approved and are therefore defined outside
+the FIPS module boundary (crypto/fipsmodule/).
+
+==============================================================================
+Notice block 75: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/err/err.c
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2006 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+`strdup` was only officially added in C23:
+* https://en.cppreference.com/w/c/string/byte/strdup
+The following macros are needed to ensure its definition
+is provided by the headers.
+
+==============================================================================
+Notice block 76: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/evp_extra/p_dh.c
+------------------------------------------------------------------------------
+Copyright 2006-2019 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 77: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/evp_extra/p_dh_asn1.c
+------------------------------------------------------------------------------
+Copyright 2006-2021 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 78: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/evp_extra/print.c
+------------------------------------------------------------------------------
+Copyright (c) 2006 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 79: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/evp_extra/scrypt.c
+------------------------------------------------------------------------------
+Copyright 2015-2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 80: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/asm/x86_64-gcc.c
+------------------------------------------------------------------------------
+x86_64 BIGNUM accelerator version 0.1, December 2002.
+Implemented by Andy Polyakov <appro@fy.chalmers.se> for the OpenSSL project.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 81: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/ctx.c
+------------------------------------------------------------------------------
+Written by Ulf Moeller for the OpenSSL project.
+Copyright (c) 1998-2004 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 82: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/exponentiation.c
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2005 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 83: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/jacobi.c
+------------------------------------------------------------------------------
+Copyright (c) 1998-2000 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 84: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/montgomery_inv.c
+------------------------------------------------------------------------------
+Copyright 2016 Brian Smith.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 85: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/rsaz_exp_x2.c
+------------------------------------------------------------------------------
+Copyright 2020-2021 The OpenSSL Project Authors. All Rights Reserved.
+Copyright (c) 2020-2021, Intel Corporation. All Rights Reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 86: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/sqrt.c
+------------------------------------------------------------------------------
+Written by Lenka Fibikova <fibikova@exp-math.uni-essen.de> and Bodo Moeller for the OpenSSL project.
+Copyright (c) 1998-2000 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 87: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/cmac/cmac.c
+------------------------------------------------------------------------------
+Copyright (c) 2010 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 88: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_aarch64_openbsd.c
+------------------------------------------------------------------------------
+Copyright (c) 2022, Robert Nagy <robert@openbsd.org>
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 89: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpu_aarch64_win.c
+------------------------------------------------------------------------------
+Copyright (c) 2018, Google Inc.
+Copyright (c) 2020, Arm Ltd.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 90: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/cpucap/cpucap.c
+------------------------------------------------------------------------------
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+The contents of this file were copied from crypto/crypto.c to this file
+as part of the change that moves the CPU capability logic inside the FIPS
+module to satisfy the FIPS requirements.
+
+==============================================================================
+Notice block 91: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/curve25519/curve25519_tables.h
+------------------------------------------------------------------------------
+Copyright (c) 2020, Google Inc.
+SPDX-License-Identifier: ISC
+This file is generated from
+./make_curve25519_tables.py > curve25519_tables.h
+
+==============================================================================
+Notice block 92: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/digest/md32_common.h
+------------------------------------------------------------------------------
+Copyright (c) 1999-2007 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 93: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/builtin_curves.h
+------------------------------------------------------------------------------
+Copyright (c) 2023, Google Inc.
+SPDX-License-Identifier: ISC
+This file is generated by make_tables.go.
+P-224
+
+==============================================================================
+Notice block 94: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/ec_montgomery.c
+------------------------------------------------------------------------------
+Originally written by Bodo Moeller and Nils Larsch for the OpenSSL project.
+Copyright (c) 1998-2005 The OpenSSL Project.  All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 95: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/ec_nistp.c
+------------------------------------------------------------------------------
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+In this file we will implement elliptic curve point operations for
+NIST curves P-256, P-384, and P-521. The idea is to implement the operations
+in a generic way such that the code can be reused instead of having
+a separate implementation for each of the curves. We implement:
+1. point addition,
+2. point doubling,
+3. scalar multiplication of a base point,
+4. scalar multiplication of an arbitrary point,
+5. scalar multiplication of a base and an arbitrary point.
+
+==============================================================================
+Notice block 96: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/p224-64.c
+------------------------------------------------------------------------------
+Copyright (c) 2015, Google Inc.
+SPDX-License-Identifier: ISC
+A 64-bit implementation of the NIST P-224 elliptic curve point multiplication
+
+Inspired by Daniel J. Bernstein's public domain nistp224 implementation
+and Adam Langley's public domain 64-bit C implementation of curve25519.
+
+==============================================================================
+Notice block 97: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/p256-nistz-table.h
+------------------------------------------------------------------------------
+Copyright 2014-2016 The OpenSSL Project Authors. All Rights Reserved.
+Copyright (c) 2015, Intel Inc.
+SPDX-License-Identifier: Apache-2.0
+This is the precomputed constant time access table for the code in
+p256-nistz.c, for the default generator. The table consists of 37
+subtables, each subtable contains 64 affine points. The affine points are
+encoded as eight uint64's, four for the x coordinate and four for the y.
+Both values are in little-endian order. There are 37 tables because a
+signed, 6-bit wNAF form of the scalar is used and ceil(256/(6 + 1)) = 37.
+Within each table there are 64 values because the 6-bit wNAF value can take
+64 values, ignoring the sign bit, which is implemented by performing a
+negation of the affine point when required. We would like to align it to 2MB
+in order to increase the chances of using a large page but that appears to
+lead to invalid ELF files being produced.
+This file is generated by make_tables.go.
+
+==============================================================================
+Notice block 98: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/p256.c
+------------------------------------------------------------------------------
+Copyright (c) 2020, Google Inc.
+SPDX-License-Identifier: ISC
+An implementation of the NIST P-256 elliptic curve point multiplication.
+256-bit Montgomery form for 64 and 32-bit. Field operations are generated by
+Fiat, which lives in //third_party/fiat.
+
+==============================================================================
+Notice block 99: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/p256_table.h
+------------------------------------------------------------------------------
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+This file is generated by make_tables.go.
+
+==============================================================================
+Notice block 100: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/p384_table.h
+------------------------------------------------------------------------------
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+This file is generated by make_tables.go.
+P-384 base point pre computation
+
+==============================================================================
+Notice block 101: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/p521.c
+------------------------------------------------------------------------------
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Implementation of P-521 that uses Fiat-crypto for the field arithmetic
+found in third_party/fiat, similarly to p256.c and p384.c
+
+==============================================================================
+Notice block 102: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/p521_table.h
+------------------------------------------------------------------------------
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+This file is generated by make_tables.go.
+P-521 base point pre computation
+
+==============================================================================
+Notice block 103: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/evp/digestsign.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2006.
+Copyright (c) 2006,2007 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 104: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/ml_dsa.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+mldsa-native source code
+Include level-independent code
+
+==============================================================================
+Notice block 105: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_intt_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) 2022 Arm Limited
+Copyright (c) 2022 Hanno Becker
+Copyright (c) 2023 Amin Abdulrahman, Matthias Kannwischer
+Copyright (c) The mlkem-native project authors
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+AArch64 ML-DSA inverse NTT following @[NeonNTT], @[SLOTHY_Paper], and @[NeonNTT_Autoformalised]
+yaml
+Name: intt_aarch64_asm
+Description: AArch64 ML-DSA inverse NTT
+Signature: void mld_intt_aarch64_asm(int32_t r[256], const int32_t zetas_l78[384], const int32_t zetas_l123456[160])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t r[256]
+description: Input/output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 1536
+permissions: read-only
+c_parameter: const int32_t zetas_l78[384]
+description: Twiddle factors for layers 7-8 (384 x int32_t)
+x2:
+type: buffer
+size_bytes: 640
+permissions: read-only
+c_parameter: const int32_t zetas_l123456[160]
+description: Twiddle factors for layers 1-6 (160 x int32_t)
+
+==============================================================================
+Notice block 106: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_ntt_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) 2022 Arm Limited
+Copyright (c) 2022 Hanno Becker
+Copyright (c) 2023 Amin Abdulrahman, Matthias Kannwischer
+Copyright (c) The mlkem-native project authors
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+AArch64 ML-DSA forward NTT following @[NeonNTT], @[SLOTHY_Paper], and @[NeonNTT_Autoformalised]
+yaml
+Name: ntt_aarch64_asm
+Description: AArch64 ML-DSA forward NTT
+Signature: void mld_ntt_aarch64_asm(int32_t r[256], const int32_t zetas_l123456[144], const int32_t zetas_l78[384])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t r[256]
+description: Input/output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 576
+permissions: read-only
+c_parameter: const int32_t zetas_l123456[144]
+description: Twiddle factors for layers 1-6 (144 x int32_t)
+x2:
+type: buffer
+size_bytes: 1536
+permissions: read-only
+c_parameter: const int32_t zetas_l78[384]
+description: Twiddle factors for layers 7-8 (384 x int32_t)
+
+==============================================================================
+Notice block 107: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_pointwise_montgomery_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_pointwise_montgomery_aarch64_asm
+Description: AArch64 pointwise Montgomery multiplication of two polynomials
+Signature: void mld_poly_pointwise_montgomery_aarch64_asm(int32_t a[256], const int32_t b[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t a[256]
+description: Input/output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int32_t b[256]
+description: Input polynomial (256 x int32_t)
+
+==============================================================================
+Notice block 108: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_caddq_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_caddq_aarch64_asm
+Description: AArch64 conditional addition of q to each coefficient
+Signature: void mld_poly_caddq_aarch64_asm(int32_t a[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t a[256]
+description: Input/output polynomial (256 x int32_t)
+
+==============================================================================
+Notice block 109: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_chknorm_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_chknorm_aarch64_asm
+Description: AArch64 infinity-norm bound check on polynomial coefficients
+Signature: int mld_poly_chknorm_aarch64_asm(const int32_t a[256], int32_t B)
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int32_t a[256]
+description: Input polynomial (256 x int32_t)
+x1:
+type: scalar
+c_parameter: int32_t B
+description: Norm bound
+test_with: 131072  # representative non-negative bound (1 << 17)
+
+==============================================================================
+Notice block 110: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_decompose_32_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_decompose_32_aarch64_asm
+Description: AArch64 coefficient decomposition (alpha = (Q-1)/32)
+Signature: void mld_poly_decompose_32_aarch64_asm(int32_t a1[256], int32_t a0[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t a1[256]
+description: Output high-part polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t a0[256]
+description: Input polynomial / output low-part (256 x int32_t)
+
+==============================================================================
+Notice block 111: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_decompose_88_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_decompose_88_aarch64_asm
+Description: AArch64 coefficient decomposition (alpha = (Q-1)/88)
+Signature: void mld_poly_decompose_88_aarch64_asm(int32_t a1[256], int32_t a0[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t a1[256]
+description: Output high-part polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t a0[256]
+description: Input polynomial / output low-part (256 x int32_t)
+
+==============================================================================
+Notice block 112: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_use_hint_32_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_use_hint_32_aarch64_asm
+Description: AArch64 hint application (alpha = (Q-1)/32)
+Signature: void mld_poly_use_hint_32_aarch64_asm(int32_t a[256], const int32_t h[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t a[256]
+description: Input/output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int32_t h[256]
+description: Hint polynomial (256 x int32_t)
+
+==============================================================================
+Notice block 113: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_poly_use_hint_88_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_use_hint_88_aarch64_asm
+Description: AArch64 hint application (alpha = (Q-1)/88)
+Signature: void mld_poly_use_hint_88_aarch64_asm(int32_t a[256], const int32_t h[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t a[256]
+description: Input/output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int32_t h[256]
+description: Hint polynomial (256 x int32_t)
+
+==============================================================================
+Notice block 114: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyvecl_pointwise_acc_montgomery_l4_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: polyvecl_pointwise_acc_montgomery_l4_aarch64_asm
+Description: AArch64 pointwise multiply-accumulate of length-4 polynomial vectors
+Signature: void mld_polyvecl_pointwise_acc_montgomery_l4_aarch64_asm(int32_t r[256], const int32_t a[4][256], const int32_t b[4][256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t r[256]
+description: Output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 4096
+permissions: read-only
+c_parameter: const int32_t a[4][256]
+description: Input polynomial vector a (4 x 256 x int32_t)
+x2:
+type: buffer
+size_bytes: 4096
+permissions: read-only
+c_parameter: const int32_t b[4][256]
+description: Input polynomial vector b (4 x 256 x int32_t)
+
+==============================================================================
+Notice block 115: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyvecl_pointwise_acc_montgomery_l5_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: polyvecl_pointwise_acc_montgomery_l5_aarch64_asm
+Description: AArch64 pointwise multiply-accumulate of length-5 polynomial vectors
+Signature: void mld_polyvecl_pointwise_acc_montgomery_l5_aarch64_asm(int32_t r[256], const int32_t a[5][256], const int32_t b[5][256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t r[256]
+description: Output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 5120
+permissions: read-only
+c_parameter: const int32_t a[5][256]
+description: Input polynomial vector a (5 x 256 x int32_t)
+x2:
+type: buffer
+size_bytes: 5120
+permissions: read-only
+c_parameter: const int32_t b[5][256]
+description: Input polynomial vector b (5 x 256 x int32_t)
+
+==============================================================================
+Notice block 116: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyvecl_pointwise_acc_montgomery_l7_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: polyvecl_pointwise_acc_montgomery_l7_aarch64_asm
+Description: AArch64 pointwise multiply-accumulate of length-7 polynomial vectors
+Signature: void mld_polyvecl_pointwise_acc_montgomery_l7_aarch64_asm(int32_t r[256], const int32_t a[7][256], const int32_t b[7][256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t r[256]
+description: Output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 7168
+permissions: read-only
+c_parameter: const int32_t a[7][256]
+description: Input polynomial vector a (7 x 256 x int32_t)
+x2:
+type: buffer
+size_bytes: 7168
+permissions: read-only
+c_parameter: const int32_t b[7][256]
+description: Input polynomial vector b (7 x 256 x int32_t)
+
+==============================================================================
+Notice block 117: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyz_unpack_17_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: polyz_unpack_17_aarch64_asm
+Description: AArch64 unpacking of 17-bit packed coefficients
+Signature: void mld_polyz_unpack_17_aarch64_asm(int32_t r[256], const uint8_t buf[576], const uint8_t indices[64])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t r[256]
+description: Output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 576
+permissions: read-only
+c_parameter: const uint8_t buf[576]
+description: Packed input bytes
+x2:
+type: buffer
+size_bytes: 64
+permissions: read-only
+c_parameter: const uint8_t indices[64]
+description: Permutation index table (64 x uint8_t)
+
+==============================================================================
+Notice block 118: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_polyz_unpack_19_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: polyz_unpack_19_aarch64_asm
+Description: AArch64 unpacking of 19-bit packed coefficients
+Signature: void mld_polyz_unpack_19_aarch64_asm(int32_t r[256], const uint8_t buf[640], const uint8_t indices[64])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t r[256]
+description: Output polynomial (256 x int32_t)
+x1:
+type: buffer
+size_bytes: 640
+permissions: read-only
+c_parameter: const uint8_t buf[640]
+description: Packed input bytes
+x2:
+type: buffer
+size_bytes: 64
+permissions: read-only
+c_parameter: const uint8_t indices[64]
+description: Permutation index table (64 x uint8_t)
+
+==============================================================================
+Notice block 119: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_rej_uniform_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: rej_uniform_aarch64_asm
+Description: AArch64 rejection sampling of uniform coefficients mod q
+Signature: uint64_t mld_rej_uniform_aarch64_asm(int32_t r[256], const uint8_t *buf, unsigned buflen, const uint8_t table[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t r[256]
+description: Output buffer (256 x int32_t)
+x1:
+type: buffer
+size_bytes: x2
+permissions: read-only
+c_parameter: const uint8_t *buf
+description: Input buffer
+x2:
+type: scalar
+c_parameter: unsigned buflen
+description: Length of input buffer (must be a multiple of 24)
+test_with: 840  # MLD_POLY_UNIFORM_NBLOCKS * SHAKE128_RATE = 5 * 168
+x3:
+type: buffer
+size_bytes: 256
+permissions: read-only
+c_parameter: const uint8_t table[256]
+description: Lookup table (256 x uint8_t)
+
+==============================================================================
+Notice block 120: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_rej_uniform_eta2_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: rej_uniform_eta2_aarch64_asm
+Description: AArch64 rejection sampling of eta=2 secret coefficients
+Signature: uint64_t mld_rej_uniform_eta2_aarch64_asm(int32_t r[256], const uint8_t *buf, unsigned buflen, const uint8_t table[4096])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t r[256]
+description: Output buffer (256 x int32_t)
+x1:
+type: buffer
+size_bytes: x2
+permissions: read-only
+c_parameter: const uint8_t *buf
+description: Input buffer
+x2:
+type: scalar
+c_parameter: unsigned buflen
+description: Length of input buffer (must be a multiple of 8)
+test_with: 136  # MLD_AARCH64_REJ_UNIFORM_ETA2_BUFLEN
+x3:
+type: buffer
+size_bytes: 4096
+permissions: read-only
+c_parameter: const uint8_t table[4096]
+description: Lookup table (4096 x uint8_t)
+
+==============================================================================
+Notice block 121: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/aarch64/src/mldsa_rej_uniform_eta4_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: rej_uniform_eta4_aarch64_asm
+Description: AArch64 rejection sampling of eta=4 secret coefficients
+Signature: uint64_t mld_rej_uniform_eta4_aarch64_asm(int32_t r[256], const uint8_t *buf, unsigned buflen, const uint8_t table[4096])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t r[256]
+description: Output buffer (256 x int32_t)
+x1:
+type: buffer
+size_bytes: x2
+permissions: read-only
+c_parameter: const uint8_t *buf
+description: Input buffer
+x2:
+type: scalar
+c_parameter: unsigned buflen
+description: Length of input buffer (must be a multiple of 8)
+test_with: 272  # MLD_AARCH64_REJ_UNIFORM_ETA4_BUFLEN
+x3:
+type: buffer
+size_bytes: 4096
+permissions: read-only
+c_parameter: const uint8_t table[4096]
+description: Lookup table (4096 x uint8_t)
+
+==============================================================================
+Notice block 122: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/ml_kem.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+mlkem-native source code
+Include level-independent code
+
+==============================================================================
+Notice block 123: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_intt_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) 2022 Arm Limited
+Copyright (c) 2022 Hanno Becker
+Copyright (c) 2023 Amin Abdulrahman, Matthias Kannwischer
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: intt_aarch64_asm
+Description: AArch64 ML-KEM inverse NTT following @[NeonNTT] and @[SLOTHY_Paper]
+Signature: void mlk_intt_aarch64_asm(int16_t p[256], const int16_t twiddles12345[80], const int16_t twiddles56[384])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 512
+permissions: read/write
+c_parameter: int16_t p[256]
+description: Input/output polynomial
+x1:
+type: buffer
+size_bytes: 160
+permissions: read-only
+c_parameter: const int16_t twiddles12345[80]
+description: Twiddle factors for layers 1-5
+x2:
+type: buffer
+size_bytes: 768
+permissions: read-only
+c_parameter: const int16_t twiddles56[384]
+description: Twiddle factors for layers 6-7
+Stack:
+bytes: 64
+description: saving callee-saved Neon registers
+
+==============================================================================
+Notice block 124: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_ntt_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) 2022 Arm Limited
+Copyright (c) 2022 Hanno Becker
+Copyright (c) 2023 Amin Abdulrahman, Matthias Kannwischer
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: ntt_aarch64_asm
+Description: AArch64 ML-KEM forward NTT following @[NeonNTT] and @[SLOTHY_Paper]
+Signature: void mlk_ntt_aarch64_asm(int16_t p[256], const int16_t twiddles12345[80], const int16_t twiddles56[384])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 512
+permissions: read/write
+c_parameter: int16_t p[256]
+description: Input/output polynomial
+x1:
+type: buffer
+size_bytes: 160
+permissions: read-only
+c_parameter: const int16_t twiddles12345[80]
+description: Twiddle factors for layers 1-5
+x2:
+type: buffer
+size_bytes: 768
+permissions: read-only
+c_parameter: const int16_t twiddles56[384]
+description: Twiddle factors for layers 6-7
+Stack:
+bytes: 64
+description: saving callee-saved Neon registers
+
+==============================================================================
+Notice block 125: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_mulcache_compute_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_mulcache_compute_aarch64_asm
+Description: Compute multiplication cache for polynomial
+Signature: void mlk_poly_mulcache_compute_aarch64_asm(int16_t cache[128], const int16_t mlk_poly[256], const int16_t zetas[128], const int16_t zetas_twisted[128])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 256
+permissions: write-only
+c_parameter: int16_t cache[128]
+description: Output cache
+x1:
+type: buffer
+size_bytes: 512
+permissions: read-only
+c_parameter: const int16_t mlk_poly[256]
+description: Input polynomial
+x2:
+type: buffer
+size_bytes: 256
+permissions: read-only
+c_parameter: const int16_t zetas[128]
+description: Zeta values
+x3:
+type: buffer
+size_bytes: 256
+permissions: read-only
+c_parameter: const int16_t zetas_twisted[128]
+description: Twisted zeta values
+Stack:
+bytes: 0
+
+==============================================================================
+Notice block 126: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_reduce_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_reduce_aarch64_asm
+Description: Barrett reduction of polynomial coefficients
+Signature: void mlk_poly_reduce_aarch64_asm(int16_t p[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 512
+permissions: read/write
+c_parameter: int16_t p[256]
+description: Input/output polynomial
+Stack:
+bytes: 0
+
+==============================================================================
+Notice block 127: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_tobytes_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_tobytes_aarch64_asm
+Description: Convert polynomial to byte representation
+Signature: void mlk_poly_tobytes_aarch64_asm(uint8_t r[384], const int16_t a[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 384
+permissions: write-only
+c_parameter: uint8_t r[384]
+description: Output byte array
+x1:
+type: buffer
+size_bytes: 512
+permissions: read-only
+c_parameter: const int16_t a[256]
+description: Input polynomial
+Stack:
+bytes: 0
+
+==============================================================================
+Notice block 128: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_poly_tomont_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: poly_tomont_aarch64_asm
+Description: Convert polynomial to Montgomery domain
+Signature: void mlk_poly_tomont_aarch64_asm(int16_t p[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 512
+permissions: read/write
+c_parameter: int16_t p[256]
+description: Input/output polynomial
+Stack:
+bytes: 0
+
+==============================================================================
+Notice block 129: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k2_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: polyvec_basemul_acc_montgomery_cached_k2_aarch64_asm
+Description: Re-implementation of asymmetric base multiplication following @[NeonNTT] for k=2
+Signature: void mlk_polyvec_basemul_acc_montgomery_cached_k2_aarch64_asm(int16_t r[256], const int16_t a[512], const int16_t b[512], const int16_t b_cache[256])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 512
+permissions: write-only
+c_parameter: int16_t r[256]
+description: Output polynomial
+x1:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int16_t a[512]
+description: Input polynomial vector a
+x2:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int16_t b[512]
+description: Input polynomial vector b
+x3:
+type: buffer
+size_bytes: 512
+permissions: read-only
+c_parameter: const int16_t b_cache[256]
+description: Cached values for b
+Stack:
+bytes: 64
+description: saving callee-saved Neon registers
+
+==============================================================================
+Notice block 130: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k3_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: polyvec_basemul_acc_montgomery_cached_k3_aarch64_asm
+Description: Re-implementation of asymmetric base multiplication following @[NeonNTT] for k=3
+Signature: void mlk_polyvec_basemul_acc_montgomery_cached_k3_aarch64_asm(int16_t r[256], const int16_t a[768], const int16_t b[768], const int16_t b_cache[384])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 512
+permissions: write-only
+c_parameter: int16_t r[256]
+description: Output polynomial
+x1:
+type: buffer
+size_bytes: 1536
+permissions: read-only
+c_parameter: const int16_t a[768]
+description: Input polynomial vector a
+x2:
+type: buffer
+size_bytes: 1536
+permissions: read-only
+c_parameter: const int16_t b[768]
+description: Input polynomial vector b
+x3:
+type: buffer
+size_bytes: 768
+permissions: read-only
+c_parameter: const int16_t b_cache[384]
+description: Cached values for b
+Stack:
+bytes: 64
+description: saving callee-saved Neon registers
+
+==============================================================================
+Notice block 131: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_polyvec_basemul_acc_montgomery_cached_k4_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: polyvec_basemul_acc_montgomery_cached_k4_aarch64_asm
+Description: Re-implementation of asymmetric base multiplication following @[NeonNTT] for k=4
+Signature: void mlk_polyvec_basemul_acc_montgomery_cached_k4_aarch64_asm(int16_t r[256], const int16_t a[1024], const int16_t b[1024], const int16_t b_cache[512])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 512
+permissions: write-only
+c_parameter: int16_t r[256]
+description: Output polynomial
+x1:
+type: buffer
+size_bytes: 2048
+permissions: read-only
+c_parameter: const int16_t a[1024]
+description: Input polynomial vector a
+x2:
+type: buffer
+size_bytes: 2048
+permissions: read-only
+c_parameter: const int16_t b[1024]
+description: Input polynomial vector b
+x3:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int16_t b_cache[512]
+description: Cached values for b
+Stack:
+bytes: 64
+description: saving callee-saved Neon registers
+
+==============================================================================
+Notice block 132: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/aarch64/src/mlkem_rej_uniform_aarch64_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+yaml
+Name: rej_uniform_aarch64_asm
+Description: Run rejection sampling on uniform random bytes to generate uniform random integers mod q
+Signature: uint64_t mlk_rej_uniform_aarch64_asm(int16_t r[256], const uint8_t *buf, unsigned buflen, const uint8_t table[4096])
+ABI:
+Architecture: aarch64
+CallingConvention: AAPCS64
+Features: [NEON]
+x0:
+type: buffer
+size_bytes: 512
+permissions: write-only
+c_parameter: int16_t r[256]
+description: Output buffer
+x1:
+type: buffer
+size_bytes: x2
+permissions: read-only
+c_parameter: const uint8_t *buf
+description: Input buffer
+x2:
+type: scalar
+c_parameter: unsigned buflen
+description: Length of input buffer (must be multiple of 24)
+test_with: 504  # MLKEM_GEN_MATRIX_NBLOCKS * MLK_XOF_RATE
+x3:
+type: buffer
+size_bytes: 4096
+permissions: read-only
+c_parameter: const uint8_t table[4096]
+description: Lookup table
+Stack:
+bytes: 576
+description: register preservation and temporary storage
+
+==============================================================================
+Notice block 133: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/rsa/blinding.c
+------------------------------------------------------------------------------
+Copyright (c) 1998-2006 The OpenSSL Project.  All rights reserved.
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 134: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/rsa/padding.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2005.
+Copyright (c) 2005 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 135: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/self_check/fips.c
+------------------------------------------------------------------------------
+Copyright (c) 2017, Google Inc.
+SPDX-License-Identifier: ISC
+Ensure we can't call OPENSSL_malloc
+
+==============================================================================
+Notice block 136: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/service_indicator/service_indicator.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Ensure we can't call OPENSSL_malloc.
+
+==============================================================================
+Notice block 137: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/sha/keccak1600.c
+------------------------------------------------------------------------------
+Copyright 2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 138: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/sha/sha1-altivec.c
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+Altivec-optimized SHA1 in C. This is tested on ppc64le only.
+
+==============================================================================
+Notice block 139: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/sha/sha3.c
+------------------------------------------------------------------------------
+Copyright 2017-2020 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 140: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/tls/kdf.c
+------------------------------------------------------------------------------
+Copyright (c) 1998-2007 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 141: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ocsp/ocsp_asn.c
+------------------------------------------------------------------------------
+Copyright 2015-2021 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+OCSP ASN1 structure definitions can be found in RFC link below
+https://tools.ietf.org/html/rfc6960#section-4.2.1
+
+==============================================================================
+Notice block 142: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ocsp/ocsp_extension.c
+------------------------------------------------------------------------------
+Copyright 2015-2021 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+Modifications Copyright Amazon.com, Inc. or its affiliates.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+
+==============================================================================
+Notice block 143: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/pkcs8/p5_pbev2.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 1999-2004.
+Copyright (c) 1999-2004 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 144: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/poly1305/poly1305.c
+------------------------------------------------------------------------------
+Copyright (c) 2014, Google Inc.
+SPDX-License-Identifier: ISC
+This implementation of poly1305 is by Andrew Moon
+(https://github.com/floodyberry/poly1305-donna) and released as public
+domain.
+
+==============================================================================
+Notice block 145: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/poly1305/poly1305_arm.c
+------------------------------------------------------------------------------
+Copyright (c) 2014, Google Inc.
+SPDX-License-Identifier: ISC
+This implementation was taken from the public domain, neon2 version in
+SUPERCOP by D. J. Bernstein and Peter Schwabe.
+
+==============================================================================
+Notice block 146: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/poly1305/poly1305_vec.c
+------------------------------------------------------------------------------
+Copyright (c) 2014, Google Inc.
+SPDX-License-Identifier: ISC
+This implementation of poly1305 is by Andrew Moon
+(https://github.com/floodyberry/poly1305-donna) and released as public
+domain. It implements SIMD vectorization based on the algorithm described in
+http://cr.yp.to/papers.html#neoncrypto. Unrolled to 2 powers, i.e. 64 byte
+block size
+
+==============================================================================
+Notice block 147: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/rsa_extra/rsa_print.c
+------------------------------------------------------------------------------
+Copyright 2006-2017 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 148: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/spake25519/internal.h
+------------------------------------------------------------------------------
+Copyright (c) 2016 Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 149: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/ui/ui.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+AWS-LC does not support the UI APIs. These functions always fail at runtime.
+This file provides no-op implementations of several UI functions that return
+failure when called. This allows compilation to succeed for projects that use
+these functions for non-essential operations.
+
+==============================================================================
+Notice block 150: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/ext_dat.h
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 1999.
+Copyright (c) 1999-2004 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+This file contains a table of "standard" extensions
+
+==============================================================================
+Notice block 151: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/internal.h
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2013.
+Copyright (c) 2013 The OpenSSL Project. All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 152: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/v3_alt.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project.
+Copyright (c) 1999-2003 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 153: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/v3_conf.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 1999.
+Copyright (c) 1999-2002 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+extension creation utilities
+
+==============================================================================
+Notice block 154: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/v3_purp.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2001.
+Copyright (c) 1999-2004 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 155: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/v3_utl.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project.
+Copyright (c) 1999-2003 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+X509 v3 extension utilities
+
+==============================================================================
+Notice block 156: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/x509_vpm.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2004.
+Copyright (c) 2004 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 157: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/x_algor.c
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 2000.
+Copyright (c) 2000 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 158: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/x509/x_spki.c
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+This module was send to me my Pat Richards <patr@x509.com> who wrote it.
+It is under my Copyright with his permission.
+
+==============================================================================
+Notice block 159: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/generated-src/err_data.c
+------------------------------------------------------------------------------
+Copyright (c) 2015, Google Inc.
+SPDX-License-Identifier: ISC
+This file was generated by err_data_generate.go.
+
+==============================================================================
+Notice block 160: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/include/openssl/arm_arch.h
+------------------------------------------------------------------------------
+Copyright (c) 1998-2011 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 161: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/include/openssl/base.h
+------------------------------------------------------------------------------
+Copyright (c) 1998-2001 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 162: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/include/openssl/cpu.h
+------------------------------------------------------------------------------
+Copyright (c) 2014, Google Inc.
+SPDX-License-Identifier: ISC
+This header is provided for compatibility with older revisions of BoringSSL.
+TODO(davidben): Remove this header.
+
+==============================================================================
+Notice block 163: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/include/openssl/dsa.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+The DSS routines are based on patches supplied by Steven Schoch <schoch@sheba.arc.nasa.gov>.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 164: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/include/openssl/experimental/kem_deterministic_api.h
+------------------------------------------------------------------------------
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+These APIs are marked as experimental as the development and standardization
+of KEMs (e.g., for FIPS 203) are being finalized.
+
+==============================================================================
+Notice block 165: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/include/openssl/is_awslc.h
+------------------------------------------------------------------------------
+Copyright (c) 2017, Google Inc.
+SPDX-License-Identifier: ISC
+This header is provided in order to catch include path errors in consuming
+AWS-LC.
+
+==============================================================================
+Notice block 166: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/include/openssl/pem.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1997 Eric Young (eay@cryptsoft.com) All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 167: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/include/openssl/x509v3_errors.h
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project 1999
+Copyright (c) 1999-2004 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 168: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/arch/jitterentropy-base-windows.h
+------------------------------------------------------------------------------
+Copyright Stephan Mueller <smueller@chronox.de>, 2013 - 2025
+
+License
+=======
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+notice, and the entire permission notice in its entirety,
+including the disclaimer of warranties.
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+3. The name of the author may not be used to endorse or promote
+products derived from this software without specific prior
+written permission.
+
+ALTERNATIVELY, this product may be distributed under the terms of
+the GNU General Public License, in which case the provisions of the GPL are
+required INSTEAD OF the above restrictions.  (This clause is
+necessary due to a potential bad interaction between the GPL and
+the restrictions contained in a BSD-style copyright.)
+
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+e USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+==============================================================================
+Notice block 169: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/third_party/jitterentropy/jitterentropy-library/src/jitterentropy-base.c
+------------------------------------------------------------------------------
+Copyright Stephan Mueller <smueller@chronox.de>, 2014 - 2025
+
+License: see LICENSE file in root directory
+
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ALL OF
+WHICH ARE HEREBY DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF NOT ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+==============================================================================
+Notice block 170: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/third_party/s2n-bignum/s2n-bignum_aws-lc.h
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License").
+You may not use this file except in compliance with the License.
+A copy of the License is located at
+
+or in the "LICENSE" file accompanying this file. This file is distributed
+on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+express or implied. See the License for the specific language governing
+permissions and limitations under the License.
+
+==============================================================================
+Notice block 171: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/chacha/asm/chacha-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/chacha/chacha-armv8.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright 2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 172: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/cipher_extra/asm/chacha20_poly1305_armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/cipher_extra/chacha20_poly1305_armv8.S)
+------------------------------------------------------------------------------
+!/usr/bin/env perl
+Copyright (c) 2020, CloudFlare Ltd.
+SPDX-License-Identifier: ISC
+
+#
+Author:  Vlad Krasnov                                                      #
+#
+
+==============================================================================
+Notice block 173: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/modes/asm/aesv8-gcm-armv8-unroll8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-gcm-armv8-unroll8.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright 2020-2022 The OpenSSL Project Authors. All Rights Reserved.
+
+Written by Xiaokang Qian <xiaokang.qian@arm.com> for the OpenSSL project,
+derived from https://github.com/ARM-software/AArch64cryptolib, original
+author Samuel Lee <Samuel.Lee@arm.com>.
+
+SPDX-License-Identifier: Apache-2.0
+Approach - We want to reload constants as we have plenty of spare ASIMD slots around crypto units for loading
+Unroll x8 in main loop, main loop to act on 8 16B blocks per iteration, and then do modulo of the accumulated
+intermediate hashesfrom the 8 blocks.
+
+==============================================================================
+Notice block 174: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/modes/asm/aesv8-gcm-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/aesv8-gcm-armv8.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright (c) 2022, ARM Inc.
+
+Written by Fangming Fang <fangming.fang@arm.com> for the OpenSSL project,
+derived from https://github.com/ARM-software/AArch64cryptolib, original
+author Samuel Lee <Samuel.Lee@arm.com>.
+
+SPDX-License-Identifier: ISC
+Approach - assume we don't want to reload constants, so reserve ~half of
+vector register file for constants
+
+==============================================================================
+Notice block 175: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/asm/armv8-mont.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/armv8-mont.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright 2015-2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 176: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/bn/asm/bn-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/bn-armv8.S)
+------------------------------------------------------------------------------
+!/usr/bin/env perl
+Copyright (c) 2023, Google Inc.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 177: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/modes/asm/ghash-neon-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/ghash-neon-armv8.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright 2010-2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 178: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/modes/asm/ghashv8-armx.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/ghashv8-armx.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright 2014-2020 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 179: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/sha/asm/keccak1600-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/keccak1600-armv8.S)
+------------------------------------------------------------------------------
+!/usr/bin/env perl
+Copyright 2017-2022 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+Add hardware-assisted ARMv8.2 implementation. It's KECCAK_1X_ALT
+variant with register permutation/rotation twist that allows to
+eliminate copies to temporary registers. If you look closely you'll
+notice that it uses only one lane of vector registers. The new
+instructions effectively facilitate parallel hashing, which we don't
+support [yet?]. But lowest-level core procedure is prepared for it.
+The inner round is 67 [vector] instructions, so it's not actually
+obvious that it will provide performance improvement [in serial
+hash] as long as vector instructions issue rate is limited to 1 per
+cycle...
+
+==============================================================================
+Notice block 180: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/md5/asm/md5-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/md5-armv8.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright 2021-2022 The OpenSSL Project Authors. All Rights Reserved.
+
+SPDX-License-Identifier: Apache-2.0
+MD5 optimized for aarch64.
+
+==============================================================================
+Notice block 181: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/ec/asm/p256-armv8-asm.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/p256-armv8-asm.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright 2015-2020 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+
+==============================================================================
+Notice block 182: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/rand/asm/rndr-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/rndr-armv8.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+RNDR from ARMv8.5-A.
+System register encoding: s3_3_c2_c4_0.
+see https://developer.arm.com/documentation/ddi0601/2024-09/AArch64-Registers/RNDR--Random-Number
+The first two arguments should always be the flavour and output file path.
+
+==============================================================================
+Notice block 183: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/fipsmodule/aes/asm/vpaes-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/fipsmodule/vpaes-armv8.S)
+------------------------------------------------------------------------------
+! /usr/bin/env perl
+Copyright 2015-2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+By Mike Hamburg (Stanford University), 2009
+Public domain.
+
+==============================================================================
+Notice block 184: 1 selection file(s), 0 superset-only file(s)
+  [selection] aws-lc/crypto/test/asm/trampoline-armv8.pl (generator of aws-lc/generated-src/ios-aarch64/crypto/test/trampoline-armv8.S)
+------------------------------------------------------------------------------
+!/usr/bin/env perl
+Copyright (c) 2019, Google Inc.
+
+SPDX-License-Identifier: ISC
+This file defines helper functions for crypto/test/abi_test.h on aarch64. See
+that header for details on how to use this.
+
+For convenience, this file is linked into libcrypto, where consuming builds
+already support architecture-specific sources. The static linker should drop
+this code in non-test binaries. This includes a shared library build of
+libcrypto, provided --gc-sections (ELF), -dead_strip (iOS), or equivalent is
+used.
+
+==============================================================================
+Notice block 185: 0 selection file(s), 20 superset-only file(s)
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/mlkem/mlkem_basemul_k2.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/mlkem/mlkem_basemul_k3.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/mlkem/mlkem_basemul_k4.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/mlkem/mlkem_mulcache_compute.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/mlkem/mlkem_reduce.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/mlkem/mlkem_rej_uniform_VARIABLE_TIME.S
+  [superset]  ... and 14 more
+------------------------------------------------------------------------------
+Copyright (c) 2024 The mlkem-native project authors
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+==============================================================================
+Notice block 186: 0 selection file(s), 14 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_intt_avx2_asm.S
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_ntt_avx2_asm.S
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_nttfrombytes_avx2_asm.S
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_ntttobytes_avx2_asm.S
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_nttunpack_avx2_asm.S
+  [superset]  aws-lc/crypto/fipsmodule/ml_kem/mlkem/native/x86_64/src/mlkem_poly_compress_d10_avx2_asm.S
+  [superset]  ... and 8 more
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Kyber implementation @[REF_AVX2].
+
+==============================================================================
+Notice block 187: 0 selection file(s), 7 superset-only file(s)
+  [superset]  aws-lc/include/openssl/ssl.h
+  [superset]  aws-lc/ssl/handshake_server.cc
+  [superset]  aws-lc/ssl/internal.h
+  [superset]  aws-lc/ssl/s3_lib.cc
+  [superset]  aws-lc/ssl/ssl_cipher.cc
+  [superset]  aws-lc/ssl/ssl_lib.cc
+  [superset]  ... and 1 more
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2007 The OpenSSL Project.  All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+Copyright 2005 Nokia. All rights reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 188: 0 selection file(s), 3 superset-only file(s)
+  [superset]  aws-lc/ssl/extensions.cc
+  [superset]  aws-lc/ssl/ssl_decrepit.c
+  [superset]  aws-lc/ssl/ssl_file.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2007 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 189: 0 selection file(s), 3 superset-only file(s)
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/x86_att/mldsa/mldsa_intt.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/x86_att/mldsa/mldsa_ntt.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/x86_att/mldsa/mldsa_reduce.S
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+==============================================================================
+Notice block 190: 0 selection file(s), 2 superset-only file(s)
+  [superset]  aws-lc/crypto/cipher_extra/cipher_test.cc
+  [superset]  aws-lc/crypto/evp_extra/evp_test.cc
+------------------------------------------------------------------------------
+Written by Dr Stephen N Henson (steve@openssl.org) for the OpenSSL project.
+Copyright (c) 2015 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 191: 0 selection file(s), 2 superset-only file(s)
+  [superset]  aws-lc/include/openssl/asn1_mac.h
+  [superset]  aws-lc/include/openssl/obj_mac.h
+------------------------------------------------------------------------------
+Copyright (c) 2016, Google Inc.
+SPDX-License-Identifier: ISC
+This header is provided in order to make compiling against code that expects
+OpenSSL easier.
+
+==============================================================================
+Notice block 192: 0 selection file(s), 2 superset-only file(s)
+  [superset]  aws-lc/ssl/d1_lib.cc
+  [superset]  aws-lc/ssl/dtls_method.cc
+------------------------------------------------------------------------------
+DTLS implementation written by Nagendra Modadugu (nagendra@cs.stanford.edu) for the OpenSSL project 2005.
+Copyright (c) 1999-2005 The OpenSSL Project.  All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 193: 0 selection file(s), 2 superset-only file(s)
+  [superset]  aws-lc/ssl/d1_pkt.cc
+  [superset]  aws-lc/ssl/dtls_record.cc
+------------------------------------------------------------------------------
+DTLS implementation written by Nagendra Modadugu (nagendra@cs.stanford.edu) for the OpenSSL project 2005.
+Copyright (c) 1998-2005 The OpenSSL Project.  All rights reserved.
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 194: 0 selection file(s), 2 superset-only file(s)
+  [superset]  aws-lc/ssl/handshake.cc
+  [superset]  aws-lc/ssl/s3_both.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2002 The OpenSSL Project.  All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 195: 0 selection file(s), 2 superset-only file(s)
+  [superset]  aws-lc/ssl/ssl_asn1.cc
+  [superset]  aws-lc/ssl/ssl_stat.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright 2005 Nokia. All rights reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 196: 0 selection file(s), 2 superset-only file(s)
+  [superset]  aws-lc/ssl/ssl_transcript.cc
+  [superset]  aws-lc/ssl/t1_enc.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2007 The OpenSSL Project.  All rights reserved.
+Copyright 2005 Nokia. All rights reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 197: 0 selection file(s), 2 superset-only file(s)
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/mlkem/mlkem_intt.S
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/arm/mlkem/mlkem_ntt.S
+------------------------------------------------------------------------------
+Copyright (c) 2022 Arm Limited
+Copyright (c) 2022 Hanno Becker
+Copyright (c) 2023 Amin Abdulrahman, Matthias Kannwischer
+Copyright (c) 2024 The mlkem-native project authors
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+==============================================================================
+Notice block 198: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/constant_time_test.cc
+------------------------------------------------------------------------------
+Copyright (c) 2014 The OpenSSL Project.  All rights reserved.
+Author: Emilia Kasper (emilia@openssl.org)
+Based on previous work by Bodo Moeller, Emilia Kasper, Adam Langley (Google).
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 199: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/dynamic_loading_test.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+This test verifies that AWS-LC's shared library can safely be
+loaded/unloaded using `dlopen`/`dlclose`.
+
+==============================================================================
+Notice block 200: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/fips_shared_library_marker.c
+------------------------------------------------------------------------------
+Copyright Amazon.com Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+The FIPS build on macOS/iOS/Windows is different than the build on Linux.
+Apple's and Windows' linkers don't support linker scripts so we have to build
+the module in a different way. This file is compiled twice:
+- with AWSLC_FIPS_SHARED_START flag to generate the start marker object file
+- with AWSLC_FIPS_SHARED_END flag to generate the end marker object file
+The two generated files are used to link with the module bcm.o such that
+the final module object has start and end markers for  __text and __const
+sections that are used for the integrity check.
+
+==============================================================================
+Notice block 201: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/fips_shared_support.c
+------------------------------------------------------------------------------
+Copyright (c) 2019, Google Inc.
+SPDX-License-Identifier: ISC
+Ensure that no ambient #pragma const_seg is active. BORINGSSL_bcm_text_hash
+MUST be placed in the default .rdata section, outside the FIPS module rodata
+boundary (.fipsco). If it were placed inside the FIPS rodata boundary, the
+integrity check would hash the expected value itself, creating a circular
+dependency that can never be satisfied.
+
+==============================================================================
+Notice block 202: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_intt_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: invntt_avx2_asm
+Description: x86_64 AVX2 inverse NTT
+Signature: void mld_invntt_avx2_asm(int32_t *r, const int32_t *qdata)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t *r
+description: Input/output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 2496
+permissions: read-only
+c_parameter: const int32_t *qdata
+description: Precomputed constants (624 x int32_t)
+
+==============================================================================
+Notice block 203: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_ntt_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: ntt_avx2_asm
+Description: x86_64 AVX2 forward NTT
+Signature: void mld_ntt_avx2_asm(int32_t *r, const int32_t *qdata)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t *r
+description: Input/output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 2496
+permissions: read-only
+c_parameter: const int32_t *qdata
+description: Precomputed constants (624 x int32_t)
+
+==============================================================================
+Notice block 204: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_nttunpack_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mlkem-native project authors
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: nttunpack_avx2_asm
+Description: x86_64 AVX2 NTT coefficient unpacking/permutation
+Signature: void mld_nttunpack_avx2_asm(int32_t *r)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t *r
+description: Input/output polynomial (256 x int32_t)
+
+==============================================================================
+Notice block 205: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_pointwise_acc_l4_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: pointwise_acc_l4_avx2_asm
+Description: x86_64 AVX2 pointwise multiply-accumulate of length-4 polynomial vectors
+Signature: void mld_pointwise_acc_l4_avx2_asm(int32_t *c, const int32_t a[4][256], const int32_t b[4][256], const int32_t *qdata)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *c
+description: Output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 4096
+permissions: read-only
+c_parameter: const int32_t a[4][256]
+description: Input polynomial vector a (4 x 256 x int32_t)
+rdx:
+type: buffer
+size_bytes: 4096
+permissions: read-only
+c_parameter: const int32_t b[4][256]
+description: Input polynomial vector b (4 x 256 x int32_t)
+rcx:
+type: buffer
+size_bytes: 2496
+permissions: read-only
+c_parameter: const int32_t *qdata
+description: Precomputed constants (624 x int32_t)
+
+==============================================================================
+Notice block 206: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_pointwise_acc_l5_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: pointwise_acc_l5_avx2_asm
+Description: x86_64 AVX2 pointwise multiply-accumulate of length-5 polynomial vectors
+Signature: void mld_pointwise_acc_l5_avx2_asm(int32_t *c, const int32_t a[5][256], const int32_t b[5][256], const int32_t *qdata)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *c
+description: Output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 5120
+permissions: read-only
+c_parameter: const int32_t a[5][256]
+description: Input polynomial vector a (5 x 256 x int32_t)
+rdx:
+type: buffer
+size_bytes: 5120
+permissions: read-only
+c_parameter: const int32_t b[5][256]
+description: Input polynomial vector b (5 x 256 x int32_t)
+rcx:
+type: buffer
+size_bytes: 2496
+permissions: read-only
+c_parameter: const int32_t *qdata
+description: Precomputed constants (624 x int32_t)
+
+==============================================================================
+Notice block 207: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_pointwise_acc_l7_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: pointwise_acc_l7_avx2_asm
+Description: x86_64 AVX2 pointwise multiply-accumulate of length-7 polynomial vectors
+Signature: void mld_pointwise_acc_l7_avx2_asm(int32_t *c, const int32_t a[7][256], const int32_t b[7][256], const int32_t *qdata)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *c
+description: Output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 7168
+permissions: read-only
+c_parameter: const int32_t a[7][256]
+description: Input polynomial vector a (7 x 256 x int32_t)
+rdx:
+type: buffer
+size_bytes: 7168
+permissions: read-only
+c_parameter: const int32_t b[7][256]
+description: Input polynomial vector b (7 x 256 x int32_t)
+rcx:
+type: buffer
+size_bytes: 2496
+permissions: read-only
+c_parameter: const int32_t *qdata
+description: Precomputed constants (624 x int32_t)
+
+==============================================================================
+Notice block 208: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_pointwise_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: pointwise_avx2_asm
+Description: x86_64 AVX2 pointwise Montgomery multiplication
+Signature: void mld_pointwise_avx2_asm(int32_t *a, const int32_t *b, const int32_t *qdata)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t *a
+description: Input/output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int32_t *b
+description: Input polynomial (256 x int32_t)
+rdx:
+type: buffer
+size_bytes: 2496
+permissions: read-only
+c_parameter: const int32_t *qdata
+description: Precomputed constants (624 x int32_t)
+
+==============================================================================
+Notice block 209: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_poly_caddq_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: poly_caddq_avx2_asm
+Description: x86_64 AVX2 conditional addition of q to each coefficient.
+For all coefficients of the in/out polynomial, add Q if the coefficient
+is negative.
+Signature: void mld_poly_caddq_avx2_asm(int32_t *r)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t *r
+description: Input/output polynomial (256 x int32_t)
+
+==============================================================================
+Notice block 210: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_poly_chknorm_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: poly_chknorm_avx2_asm
+Description: x86_64 AVX2 infinity-norm bound check on polynomial coefficients.
+Check the infinity norm of the polynomial against the given bound B.
+Returns 0 if the norm is strictly smaller than B; otherwise returns 1
+(i.e. returns 1 if any |coefficient| >= B, 0 otherwise).
+Signature: int mld_poly_chknorm_avx2_asm(const int32_t *a, int32_t B)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int32_t *a
+description: Input polynomial (256 x int32_t)
+rsi:
+type: scalar
+c_parameter: int32_t B
+description: Norm bound (must be non-negative)
+test_with: 131072  # representative non-negative bound (1 << 17)
+
+==============================================================================
+Notice block 211: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_poly_decompose_32_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: poly_decompose_32_avx2_asm
+Description: x86_64 AVX2 coefficient decomposition (alpha = 2*(Q-1)/32).
+For all coefficients c of the input polynomial, compute high and low bits
+c0, c1 such that c = c1*ALPHA + c0 with -ALPHA/2 < c0 <= ALPHA/2, except if
+c1 = (Q-1)/ALPHA where we set c1 = 0 and -ALPHA/2 <= c0 = c - Q < 0.
+Assumes coefficients to be standard (unsigned canonical) representatives,
+i.e. 0 <= c < Q. For ML-DSA-65 / ML-DSA-87 (gamma2 = (Q-1)/32,
+alpha = 2*gamma2).
+Signature: void mld_poly_decompose_32_avx2_asm(int32_t *a1, int32_t *a0)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *a1
+description: Output high-part polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t *a0
+description: Input polynomial / output low-part (256 x int32_t)
+
+==============================================================================
+Notice block 212: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_poly_decompose_88_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: poly_decompose_88_avx2_asm
+Description: x86_64 AVX2 coefficient decomposition (alpha = 2*(Q-1)/88).
+For all coefficients c of the input polynomial, compute high and low bits
+c0, c1 such that c = c1*ALPHA + c0 with -ALPHA/2 < c0 <= ALPHA/2, except if
+c1 = (Q-1)/ALPHA where we set c1 = 0 and -ALPHA/2 <= c0 = c - Q < 0.
+Assumes coefficients to be standard (unsigned canonical) representatives,
+i.e. 0 <= c < Q. For ML-DSA-44 (gamma2 = (Q-1)/88, alpha = 2*gamma2).
+Signature: void mld_poly_decompose_88_avx2_asm(int32_t *a1, int32_t *a0)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *a1
+description: Output high-part polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t *a0
+description: Input polynomial / output low-part (256 x int32_t)
+
+==============================================================================
+Notice block 213: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_poly_use_hint_32_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: poly_use_hint_32_avx2_asm
+Description: x86_64 AVX2 hint application (alpha = (Q-1)/32).
+Use the hint polynomial h to correct the high bits of the polynomial a,
+in place. Variant for parameter sets ML-DSA-65 and ML-DSA-87
+(GAMMA2 = (Q-1)/32).
+Signature: void mld_poly_use_hint_32_avx2_asm(int32_t *a, const int32_t *h)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t *a
+description: Input/output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int32_t *h
+description: Hint polynomial (256 x int32_t)
+
+==============================================================================
+Notice block 214: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_poly_use_hint_88_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: poly_use_hint_88_avx2_asm
+Description: x86_64 AVX2 hint application (alpha = (Q-1)/88).
+Use the hint polynomial h to correct the high bits of the polynomial a,
+in place. Variant for parameter set ML-DSA-44 (GAMMA2 = (Q-1)/88).
+Signature: void mld_poly_use_hint_88_avx2_asm(int32_t *a, const int32_t *h)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: read/write
+c_parameter: int32_t *a
+description: Input/output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 1024
+permissions: read-only
+c_parameter: const int32_t *h
+description: Hint polynomial (256 x int32_t)
+
+==============================================================================
+Notice block 215: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_polyz_unpack_17_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: polyz_unpack_17_avx2_asm
+Description: x86_64 AVX2 unpacking of 17-bit packed coefficients.
+Unpack polynomial z with 18-bit packed coefficients (GAMMA1 = 2^17),
+mapping packed [0, 2^18-1] to signed [-(2^17-1), 2^17] via GAMMA1 - x.
+Signature: void mld_polyz_unpack_17_avx2_asm(int32_t *r, const uint8_t *a)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *r
+description: Output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 576
+permissions: read-only
+c_parameter: const uint8_t *a
+description: Packed input bytes
+
+==============================================================================
+Notice block 216: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_polyz_unpack_19_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: polyz_unpack_19_avx2_asm
+Description: x86_64 AVX2 unpacking of 19-bit packed coefficients.
+Unpack polynomial z with 20-bit packed coefficients (GAMMA1 = 2^19),
+mapping packed [0, 2^20-1] to signed [-(2^19-1), 2^19] via GAMMA1 - x.
+Signature: void mld_polyz_unpack_19_avx2_asm(int32_t *r, const uint8_t *a)
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *r
+description: Output polynomial (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 640
+permissions: read-only
+c_parameter: const uint8_t *a
+description: Packed input bytes
+
+==============================================================================
+Notice block 217: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_rej_uniform_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: rej_uniform_avx2_asm
+Description: x86_64 AVX2 rejection sampling of uniform coefficients mod q.
+Extract 23-bit values from the input byte buffer and accept those that are
+< MLDSA_Q, writing accepted coefficients to the output buffer. Returns the
+number of valid coefficients written (at most 256).
+Signature: unsigned mld_rej_uniform_avx2_asm(int32_t *r, const uint8_t buf[840], const uint8_t table[256][8])
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *r
+description: Output buffer (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 840
+permissions: read-only
+c_parameter: const uint8_t buf[840]
+description: Input buffer (MLD_POLY_UNIFORM_NBLOCKS * SHAKE128_RATE = 5 * 168)
+rdx:
+type: buffer
+size_bytes: 2048
+permissions: read-only
+c_parameter: const uint8_t table[256][8]
+description: Lookup table (256 x 8 x uint8_t)
+
+==============================================================================
+Notice block 218: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_rej_uniform_eta2_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: rej_uniform_eta2_avx2_asm
+Description: x86_64 AVX2 rejection sampling of eta=2 secret coefficients.
+Extracts 4-bit nibbles from the input byte buffer, accepts those < 15,
+and maps an accepted nibble n to the coefficient 2 - (n mod 5) via a
+centered modulo-5 reduction, producing values in [-2, 2].
+Signature: unsigned mld_rej_uniform_eta2_avx2_asm(int32_t *r, const uint8_t *buf, const uint8_t table[256][8])
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *r
+description: Output coefficient buffer (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 136
+permissions: read-only
+c_parameter: const uint8_t *buf
+description: Input byte buffer (MLD_AVX2_REJ_UNIFORM_ETA2_BUFLEN = 136)
+rdx:
+type: buffer
+size_bytes: 2048
+permissions: read-only
+c_parameter: const uint8_t *table
+description: Lookup table (256 x 8 uint8_t = mld_rej_uniform_table)
+
+==============================================================================
+Notice block 219: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/fipsmodule/ml_dsa/mldsa/native/x86_64/src/mldsa_rej_uniform_eta4_avx2_asm.S
+------------------------------------------------------------------------------
+Copyright (c) The mldsa-native project authors
+SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+
+This file is derived from the public domain
+AVX2 Dilithium implementation @[REF_AVX2].
+
+yaml
+Name: rej_uniform_eta4_avx2_asm
+Description: x86_64 AVX2 rejection sampling of eta=4 secret coefficients.
+Extracts 4-bit nibbles from the input byte buffer, accepts those < 9,
+and maps an accepted nibble n to the coefficient 4 - n, producing
+values in [-4, 4].
+Signature: unsigned mld_rej_uniform_eta4_avx2_asm(int32_t *r, const uint8_t *buf, const uint8_t table[256][8])
+ABI:
+Architecture: x86_64
+CallingConvention: SysV
+Features: [AVX2]
+rdi:
+type: buffer
+size_bytes: 1024
+permissions: write-only
+c_parameter: int32_t *r
+description: Output coefficient buffer (256 x int32_t)
+rsi:
+type: buffer
+size_bytes: 272
+permissions: read-only
+c_parameter: const uint8_t *buf
+description: Input byte buffer (MLD_AVX2_REJ_UNIFORM_ETA4_BUFLEN = 272)
+rdx:
+type: buffer
+size_bytes: 2048
+permissions: read-only
+c_parameter: const uint8_t *table
+description: Lookup table (256 x 8 uint8_t = mld_rej_uniform_table)
+
+==============================================================================
+Notice block 220: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/hrss/asm/poly_rq_mul.S
+------------------------------------------------------------------------------
+Copyright (c) 2017, the HRSS authors.
+
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 221: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/mem_test.cc
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Weak symbols are only supported well on Linux platforms. The memory functions
+that attempt to use weak symbols in mem.c are disabled on other platforms.
+Therefore, only run these tests on supported platforms.
+
+==============================================================================
+Notice block 222: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/rwlock_static_init.cc
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+This test attempts to setup a potential race condition that can cause the
+first use of an rwlock to fail when initialized using
+PTHREAD_RWLOCK_INITIALIZER.
+See: https://sourceforge.net/p/mingw-w64/bugs/883/
+
+==============================================================================
+Notice block 223: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/crypto/x509/x509_time_test.cc
+------------------------------------------------------------------------------
+Copyright 2017 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+Tests for X509 time functions.
+
+==============================================================================
+Notice block 224: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/include/openssl/e_os2.h
+------------------------------------------------------------------------------
+Copyright (c) 2018, Google Inc.
+SPDX-License-Identifier: ISC
+This header is provided in order to make compiling against code that expects
+OpenSSL easier.
+
+==============================================================================
+Notice block 225: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/include/openssl/ssl3.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2002 The OpenSSL Project. All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 226: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/include/openssl/time.h
+------------------------------------------------------------------------------
+Copyright (c) 2024, Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 227: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/include/openssl/tls1.h
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2006 The OpenSSL Project.  All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+Copyright 2005 Nokia. All rights reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 228: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/include/openssl/x509_vfy.h
+------------------------------------------------------------------------------
+Copyright (c) 2021, Google Inc.
+SPDX-License-Identifier: ISC
+This header is provided in order to make compiling against code that expects
+OpenSSL easier.
+
+==============================================================================
+Notice block 229: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/provider/backend/mem.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Allocation, deliberately on AWS-LC's allocator rather than the core's memory
+upcalls: routing through OpenSSL's allocator would entangle the two libcryptos'
+memory management for no benefit. Only caller-owned OSSL_PARAM buffers cross
+the boundary, and those are never allocated by us.
+
+==============================================================================
+Notice block 230: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/provider/backend/operations/digests/sha2.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Back side: AWS-LC's SHA-2. This file sees AWS-LC's headers, so it must not
+include any OpenSSL provider header.
+
+==============================================================================
+Notice block 231: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/provider/frontend/operations/digests/sha2.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Front side: SHA-256's dispatch slots and their OSSL_PARAM plumbing. This file
+sees OpenSSL's headers, so it must not include any AWS-LC header; the transform
+arrives through the backend interface.
+
+==============================================================================
+Notice block 232: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/provider/frontend/provider.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+The provider-global surface: OSSL_provider_init, the top-level dispatch table,
+and the parameters the provider answers about itself. What it advertises is
+registry.c.
+
+==============================================================================
+Notice block 233: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/provider/test/backend/operations/digests/sha2_test.cc
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+The back side enforces output bounds that AWS-LC's size-less SHA*_Final
+functions cannot enforce themselves. OpenSSL's EVP layer always supplies the
+advertised digest size, so this guarantee must be tested directly here.
+
+==============================================================================
+Notice block 234: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/provider/test/frontend/operations/digests/digests_test.cc
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Properties of the digest operation class.
+
+==============================================================================
+Notice block 235: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/provider/test/frontend/provider_test.cc
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+The provider-global surface: that the module loads, reports itself correctly,
+and declines every operation class, so fetches fall through to another
+provider rather than failing.
+
+==============================================================================
+Notice block 236: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/ssl/bio_ssl.cc
+------------------------------------------------------------------------------
+Copyright 1995-2016 The OpenSSL Project Authors. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 237: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/ssl/d1_both.cc
+------------------------------------------------------------------------------
+Copyright (c) 1998-2005 The OpenSSL Project.  All rights reserved.
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+DTLS implementation written by Nagendra Modadugu (nagendra@cs.stanford.edu) for the OpenSSL project 2005.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 238: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/ssl/d1_srtp.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2006 The OpenSSL Project.  All rights reserved.
+DTLS code by Eric Rescorla <ekr@rtfm.com>
+Copyright (C) 2006, Network Resonance, Inc.
+Copyright (C) 2011, RTFM, Inc.
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 239: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/ssl/handshake_client.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2007 The OpenSSL Project. All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+Copyright 2005 Nokia. All rights reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 240: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/ssl/ssl_c_test.c
+------------------------------------------------------------------------------
+Copyright (c) 2019 Google Inc.
+SPDX-License-Identifier: ISC
+
+==============================================================================
+Notice block 241: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/ssl/ssl_cert.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2007 The OpenSSL Project.  All rights reserved.
+Copyright 2002 Sun Microsystems, Inc. ALL RIGHTS RESERVED.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 242: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/ssl/ssl_ciphers_test.cc
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+ssl_test_ticket_aead_failure_mode enumerates the possible ways in which the
+test |SSL_TICKET_AEAD_METHOD| can fail.
+
+==============================================================================
+Notice block 243: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/ssl/ssl_session.cc
+------------------------------------------------------------------------------
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Copyright (c) 1998-2006 The OpenSSL Project.  All rights reserved.
+Copyright 2005 Nokia. All rights reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+Notice block 244: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/ssl/ssl_text.cc
+------------------------------------------------------------------------------
+Copyright 1995-2022 The OpenSSL Project Authors. All Rights Reserved.
+Copyright 2005 Nokia. All rights reserved.
+
+SPDX-License-Identifier: Apache-2.0
+
+Modifications Copyright Amazon.com, Inc. or its affiliates.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+
+==============================================================================
+Notice block 245: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/tests/compiler_features_tests/builtin_swap_check.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Builtin swap was added in GCC 4.8 https://gcc.gnu.org/gcc-4.8/changes.html.
+Recent versions of Clang pretend to be 4.2 but they do support the builtin
+swap functions.
+
+==============================================================================
+Notice block 246: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/tests/compiler_features_tests/c11.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Simple program that should also be able to compiler, udeful to test different
+compiler flags
+
+==============================================================================
+Notice block 247: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/tests/compiler_features_tests/empty.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Minimal source used by CMake try_compile() linker flag probes.
+Intentionally trivial so compile never fails — only the link step matters.
+
+==============================================================================
+Notice block 248: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/tests/compiler_features_tests/linux_random_h.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+This file checks if <linux/random.h> can be included. Currently, we assume
+that the compiler error is caused by '__u32' not being defined.
+Theory:
+crypto/fipsmodule/rand/urandom.c includes the <linux/random.h> Linux header.
+Some old Linux OS does not define '__u32' causing the following error:
+/usr/include/linux/random.h:38:2: error: unknown type name '__u32'
+__u32 buf[0];
+^
+
+==============================================================================
+Notice block 249: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/tests/compiler_features_tests/neon_sha3_check.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Test for NEON SHA3 extension support in the assembler
+Requires -march=armv8.4-a+sha3 compiler flag
+
+==============================================================================
+Notice block 250: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/tests/compiler_features_tests/stdalign_check.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Old versions of GCC don't support __has_include which could be used to check
+for stdalign.h, try to compile this instead.
+
+==============================================================================
+Notice block 251: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/third_party/s2n-bignum/s2n-bignum-imported/x86_att/sha3/sha3_keccak_f1600.S
+------------------------------------------------------------------------------
+Copyright (c) 2017-2024 The OpenSSL Project Authors
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+Written by Andy Polyakov, @dot-asm, initially for use in the OpenSSL
+project.
+
+==============================================================================
+Notice block 252: 0 selection file(s), 1 superset-only file(s)
+  [superset]  aws-lc/util/fipstools/test_fips.c
+------------------------------------------------------------------------------
+Copyright (c) 2017, Google Inc.
+SPDX-License-Identifier: ISC
+test_fips exercises various cryptographic primitives for demonstration
+purposes in the validation process only.
+
+==============================================================================
+Notice block 253: 0 selection file(s), 1 superset-only file(s)
+  [superset]  builder/fips_link_probe.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Build-time FIPS probe for the system-library path.
+
+==============================================================================
+Notice block 254: 0 selection file(s), 1 superset-only file(s)
+  [superset]  builder/fips_runtime_check.c
+------------------------------------------------------------------------------
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+Runtime FIPS-mode self-check for the system-library path.
+
+==============================================================================
+Notice block 255: 0 selection file(s), 1 superset-only file(s)
+  [superset]  include/rust_wrapper.h
+------------------------------------------------------------------------------
+Copyright (c) 2022, Google Inc.
+SPDX-License-Identifier: ISC
+Modifications copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0 OR ISC
+

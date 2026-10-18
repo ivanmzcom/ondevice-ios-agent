@@ -1,0 +1,68 @@
+License scope
+=============
+
+The MIT License below applies ONLY to material in this repository that was written
+by the project owner or contributed with authorization to license it under these
+terms ("project-owned or authorized contributions"). This includes the original
+placeholder runner icon described in README.md; that inclusion is a license grant
+for whatever rights exist in it, not a statement that it is or is not eligible for
+copyright protection.
+
+It does NOT relicense third-party material. Third-party files, and third-party
+portions of files that also contain project changes, remain under their original
+licenses and notices, listed after the license text below and in
+THIRD_PARTY_NOTICES.md. Where a file says it is copied, ported, adapted or "based
+on" another project, that project's license and notice continue to apply to the
+material taken from it.
+
+--------------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 Iván Moreno
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+
+Third-party material NOT covered by the grant above
+===================================================
+
+Each item keeps its own license. See THIRD_PARTY_NOTICES.md for details and
+DEPENDENCIES.json for the Rust dependency list.
+
+- esp32-iphone-agent, Copyright (c) 2026 Henry Yuan, MIT:
+  licenses/esp32-iphone-agent-MIT.txt and Core/LICENSE.upstream-MIT. Covers the
+  copied model-client/JSON sources (Core/Sources/UnifiedAgentCore/Upstream/, see
+  Core/VENDORED.md) and the material ported or adapted from it (Live Activity UI
+  and lifecycle, AgentFace, prompt concepts).
+- LocalDevVPN / StosVPN, Copyright (c) 2025 SideStore Team, StosVPN License:
+  licenses/LocalDevVPN-StosVPN.txt. The Tunnel/ extension is based on its loopback
+  technique; its attribution and "based on" conditions apply, and this project
+  does not use the LocalDevVPN or StosVPN names or branding.
+- WebDriverAgent, Copyright (c) 2015-present, Facebook, Inc., BSD-3-Clause-style
+  license: runner/LICENSE. Covers the runner/ tree, including the upstream portions
+  of runner/WebDriverAgentLib/Commands/FBDebugCommands.m.
+- Apache-2.0 sources inside the runner (FBHTTPStatusCodes.h, Copyright (C) 2013
+  Neo Visionaries Inc.; LRUCache/LRUCacheNode): licenses/Apache-2.0.txt.
+- idevice, Copyright 2026 Jackson Coxson, MIT: licenses/cargo/idevice-0.1.68/.
+  Also kept for the heartbeat client behaviour followed in
+  unified-ffi/src/heartbeat.rs.
+- Rust crates pinned in unified-ffi/Cargo.lock: licenses/cargo/,
+  licenses/cargo-embedded/ and licenses/standard/ (license texts per crate).
